@@ -1,0 +1,148 @@
+{
+    "microProductsDetails": [
+        {
+            "name": "RecLytics",
+            "desc": "Recruitment Analytics"
+        },
+        {
+            "name": "Staffi",
+            "desc": "Staffing Intelligence"
+        },
+        {
+            "name": "Rics",
+            "desc": "Manpower Maximization"
+        },
+        {
+            "name": "PPP",
+            "desc": "Performance Mining"
+        },
+        {
+            "name": "DigiB",
+            "desc": "Digital Behavior Extracts"
+        },
+        {
+            "name": "Skillitics",
+            "desc": "Skill Validations & Projections"
+        },
+        {
+            "name": "MyOrg",
+            "desc": "Relationship Insights"
+        },
+        {
+            "name": "SpeedCheck",
+            "desc": "BGV Correlations"
+        }
+    ],
+
+    "productsAndServices": [
+        "Precision check",
+        "Degree Coverage",
+        "DigiJoin",
+        "Speed Check",
+        "WeConnect",
+        "Better Humans"
+    ],
+
+    "serviceDetails" : [
+        {
+            "side": "right",
+            "name": "Staffing",
+            "content": "Our Intelligent Staffing services powered with Staffi helps you optimise your TAT in fulfillment  and ready on toes to absorb any kind of business opportunity. Thus making staffing an integral part to ease and be confident of signing businesses.",
+            "src": "./Services/image1.webp"
+        },
+        {
+            "side": "left",
+            "name": "Recruitment",
+            "content": "RecLytics boosts your sourcing and recruitment system with thorough quality analytics. The main challenge faced by any organisation today is finding that 100% suitable resources fulfilling the short term and long term recruitment goals. Organisations are normally blinded by short term goals and end up carrying baggages. Our Reclytics services would help you achieve maximum fitment with long term benefits.",
+            "src": "./Services/image2.webp"
+        },
+        {
+            "side": "right",
+            "name": "ManPower",
+            "content": "The Manpower Analytics engine Rics helps in optimising resources thus plugging the cost leakage majorly. Efficient internal skills and talent analytics helps organisation to plan advance upskilling, maintaining validated skill profiles and thus maximally utilize the organisation manpower.",
+            "src": "./Services/image3.webp"
+        },
+        {
+            "side": "left",
+            "name": "Engagement and Relationship",
+            "content": "Human resource engagement analytics powered by MyOrg derived through objective surveys, micro assessments, titbit mindpecks, happiness testers etc. ensures reality checks to improve the organisation's ecosystem and human ambience. It helps further micro level engagements with human resources through personalised objectives. MyOrg also analyses the [Associate - Organisation] relationship measures from negative -1 to positive +1.",
+            "src": "./Services/image4.webp"
+        },
+        {
+            "side": "right",
+            "name": "Workforce Behavior in Digital Space",
+            "content": "Again powered by the MyOrg micro-product, we offer crawler services to extract workforce behaviour in social media to keep a check on their organization perceptions, retention quotient, reality behaviour checks, real time image checks. This helps in real time mitigations of perceptions.",
+            "src": "./Services/image5.webp"
+        },
+        {
+            "side": "left",
+            "name": "Background",
+            "content": "Our comprehensive AI powered BGV check results help employers reduce workplace violence, theft, substance abuse and negligent hiring liabilities at a reduced TAT. We comprehensively correlate BGV data with human resource performance and potential for effective hiring",
+            "src": "./Services/image6.webp"
+        },
+        {
+            "side": "right",
+            "name": "Training and Development",
+            "content": "Organisations fail to measure real outcomes whenever training and skilling programs are rolled out. Huge budgets get allocated for skilling and learning programs, but unless the effective outcomes of the programs are measured, there are undetected business losses and consequences. Powered by the Skillitics engine, we provide the best of the analytics support to gauge Learning, Skilling and Training programs for better outcomes, and mapping human resources to right projects. We also provide analytical support to analyze idle resources and create skilling road maps to them aligned to organisations projections.",
+            "src": "./Services/image7.webp"
+        },
+        {
+            "side": "left",
+            "name": "MyBest",
+            "content": "The MyBest micro product enables complete analytics of three key parameters of human resources in an organization - Participation, Performance and Proactiveness. The key parameters are captured through various measurements, surveys, feedbacks, timesheets, logs etc. This enables organisations to keep track of one associate one job check, round the clock participation in job, key outcomes to measure job performance and proactiveness in delivery.",
+            "src": "./Services/image8.webp"
+        }
+    ],
+
+    "cardDetails1" : [
+        {
+            "name": "Data Engineers",
+            "exp": "Exp - 2+ years"
+        },
+        {
+            "name": "Data Scientists",
+            "exp": "Exp - 3+ years"
+        },
+        {
+            "name": "Business & Sales",
+            "exp": "Exp - 3-4 years"
+        }
+    ],
+
+    "cardDetails2" : [
+        {
+            "name": "Full Stack Developers",
+            "exp": "Exp - 2+ years"
+        },
+        {
+            "name": "Operation Specialist",
+            "exp": "Exp - 3-4 years"
+        }
+    ],
+
+    "cardDetails3" : [
+        {
+            "name": "Culture",
+            "content": "There are very few organizations that have as good a culture as ours. We ensure that you get the best work life balance and you are happy from within. At, HRlytics, you will work with inspiring leaders who will constantly set high standards. You will be at your professional best as you work for a niche vertical where our products and services are among the best."
+        },
+        {
+            "name": "Collaboration",
+            "content": "At HRlytics, collaboration is the name of the game.  We don’t believe play is restricted to children. HRlytics is an adult playground where we play the game of collaboration in order to set and achieve business goals. It is not only people collaboration but also technological collaboration. We work with the best brains in the fields of HR and Artificial Intelligence creating sophisticated technologies that are typically the leading products in the industry."
+        },
+        {
+            "name": "Creativity",
+            "content": "At HRlytics, people put their heart and soul into work.  There is so much love at work that the elevated spirits create an environment that is conducive for creative thinking. As a result, various analytics pertaining to Human Resources management are envisaged, designed and developed using cutting edge technologies. HRlytics provides an opportunity to understand end -to-end business cycles. A thorough understanding of various businesses allows our people to put their creativity to use while developing tools that solve various business problems."
+        },
+        {
+            "name": "Innovation",
+            "content": "The attitude at HRlytics is tuned to think ahead of our times. We keep looking into the future as we develop solutions in terms of tools, micro products and products that will answer potential problems of the future. Innovation is real fun when our minds are inclined to expand discovering problem statements that are of various permutations and combinations."
+        },
+        {
+            "name": "Challenges",
+            "content": "We are a team of leaders and leaders in the making and hence we love to take on challenges.  Once a good idea emerges, we never hesitate to make it a reality. In the process we challenge our own ways to the extent that we can easily overcome external challenges. We are of firm faith that the possibility to succeed is greater when we act on challenges with faith and resilience rather than not act and let a great idea wither away."
+        }, {
+            "name": "Transformations",
+            "content": " We transform HR processes. Our goal is to provide entire gamut of HR solutions to our clients. We work with a mission to improve efficiencies, touch and transform lives. The happiness quotient of the employees that engage with HRlytics will certainly and significantly improve. We strive to create positive energy and earn goodwill from our customers."
+        }
+    ]
+}

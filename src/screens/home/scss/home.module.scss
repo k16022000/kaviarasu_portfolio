@@ -1,0 +1,522 @@
+@import "assets/scss/main.scss";
+
+.noborder {
+  border: none !important;
+  box-shadow: none !important;
+  padding: 9.4rem 0rem !important;
+  margin: 0rem !important;
+  background: linear-gradient(179.84deg, #F6F6F6 0.14%, rgba(255, 255, 255, 0) 51.04%, rgba(83, 145, 101, 0.14) 99.86%) !important;
+
+  @include for_media(mobileScreen) {
+    padding: 4.5rem 1rem !important;
+  }
+}
+
+.homeouter {
+  .homeimage {
+    margin: 0 5rem;
+    display: block;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    @include for_media(largeScreen) {
+      margin: 0 3.7rem;
+    }
+
+    @include for_media(mediumScreen) {
+      display: flex !important;
+      justify-content: center;
+    }
+
+    @include for_media(bigTabletScreen) {
+      display: flex !important;
+      justify-content: center;
+    }
+
+    .requesToContact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .requestDemoContact {
+        color: #4f7c5b;
+      }
+
+      .allActions {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+        margin-bottom: 1em;
+        border: 1px solid #4f7c5b;
+        border-radius: 35px;
+        padding: 0.5% 3%;
+        box-shadow: 1px 1px 14px #b3bb92ad;
+
+        >img {
+          cursor: pointer;
+        }
+      }
+    }
+
+    @include for_media(mobileScreen) {
+      margin: 0rem;
+    }
+
+    >div[class="ui grid"] {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      // margin: 3.1rem 0 0em 0em;
+
+      @include for_media(bigTabletScreen) {
+        margin: 0%;
+      }
+
+      @include for_media(mobileScreen) {
+        margin: 0;
+      }
+
+      >div:first-child {
+        display: flex;
+
+        @include for_media(largeScreen) {
+          padding-left: 0rem !important;
+        }
+
+        @include for_media(mobileScreen) {
+          justify-content: center;
+          margin: 0;
+        }
+
+        >div:last-child {
+          >button {
+            display: flex;
+            margin-left: auto;
+            border: 1.5px solid;
+            border-radius: 25px;
+            padding: 5px 10px;
+            background: #fff;
+            font-weight: 500;
+
+            >a {
+              color: "#132E18 !important";
+            }
+          }
+        }
+      }
+
+      // >div:last-child {
+      //   >div {
+      //     margin: 0 4rem 4rem 4rem;
+      //     background-color: #ffffff;
+      //     border-radius: 2rem;
+      //     // cursor: pointer;
+      //     box-shadow: 5px 5px 12px #4f7c5b, 1rem 1rem rgba(179, 187, 146, 0.5),
+      //       2rem 2rem rgba(228, 222, 174, 0.5);
+
+      //     @include for_media(mobileScreen) {
+      //       margin: 0 0rem 4rem 0rem;
+      //     }
+
+      //     >div:last-child {
+      //       display: flex;
+      //       align-items: center;
+      //       justify-content: center;
+      //       padding: 2rem 6rem;
+
+      //       >div[class="connectingCircle"] {
+      //         width: 1rem;
+      //         height: 1rem;
+      //         border: 1px solid #4f7c5b;
+      //         border-radius: 50%;
+      //       }
+
+      //       >div[class="circle"] {
+      //         width: 1rem;
+      //         height: 1rem;
+      //         background-color: #133a1b;
+      //         border-radius: 50%;
+      //       }
+
+      //       >div[class="connectingLine"] {
+      //         border: 1px solid #4f7c5b;
+      //         width: 10%;
+      //       }
+      //     }
+
+      //     >div {
+      //       // padding: 1rem 1rem 0rem 1rem;
+      //       padding: 3% 1% 0 1%;
+
+      //       @include for_media(mobileScreen) {
+      //         // padding: 1rem 1rem 0rem 1rem;
+      //       }
+
+      //       >button {
+      //         display: none !important;
+      //       }
+
+      //       >div:nth-child(2) {
+      //         >div {
+      //           >div {
+      //             >div {
+      //               >div {
+      //                 >h1 {
+      //                   display: flex;
+      //                   justify-content: center;
+      //                   font-weight: 700;
+      //                 }
+
+      //                 >h2 {
+      //                   display: flex;
+      //                   justify-content: center;
+
+      //                   >div {
+      //                     border-radius: 2rem;
+      //                     background-color: #4f7c5b;
+      //                     color: #ffffff;
+      //                     padding: 0.5rem;
+      //                     text-align: center;
+      //                   }
+      //                 }
+
+      //                 >h3 {
+      //                   display: flex;
+      //                   justify-content: center;
+
+      //                   >div {
+      //                     text-align: center;
+      //                     padding: 0 4rem;
+      //                     color: #4f7c5b;
+
+      //                     @include for_media(mobileScreen) {
+      //                       padding: 0rem;
+      //                     }
+      //                   }
+      //                 }
+      //               }
+      //             }
+      //           }
+      //         }
+      //       }
+      //     }
+      //   }
+      // }
+    }
+
+    .homeleft {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 0 6rem 0rem;
+
+      @include for_media(mobileScreen) {
+        // width: 19.884rem;
+        text-align: center;
+        margin: 0;
+      }
+
+      @include for_media(largeScreen) {
+        margin: 0 0 6rem 0rem;
+      }
+
+      @include for_media(tabletScreen) {
+        // width: 19.884rem;
+        text-align: center;
+        margin: 0;
+      }
+
+      @include for_media(mediumScreen) {
+
+        text-align: center;
+        margin: 0rem;
+      }
+
+      @include for_media(bigTabletScreen) {
+
+        text-align: center;
+        margin: 1rem 0rem;
+      }
+
+      // padding: 80px 0px 10px 7px;
+      // margin-left: 25px;
+      // width: 100%;
+      >h1 {
+        font-weight: 700;
+        color: rgba(104, 156, 118, 1);
+
+        @include for_media(mediumScreen) {
+          text-align: center;
+        }
+      }
+
+      >h2 {
+        margin-top: 0;
+      }
+
+      .homeleftpic {
+        // width: 25.5%;
+        margin: auto;
+        padding-top: 8px;
+      }
+
+      .hometitle,
+      .homeHeadtitle {
+        color: #689c76;
+        white-space: nowrap;
+      }
+
+      .homeHeadtitle {
+        margin-bottom: 0 !important;
+      }
+
+      .subtitle {
+        color: #696969;
+        font-weight: 400;
+
+        @include for_media(mobileScreen) {
+          margin-bottom: 1rem;
+        }
+      }
+
+      .btnBox {
+        display: flex;
+        margin-top: 1rem;
+        // justify-content: center;
+
+        @include for_media(mobileScreen) {
+          margin-top: 2rem !important;
+        }
+
+        @include for_media(largeScreen) {}
+
+        @include for_media(tabletScreen) {
+          justify-content: center;
+        }
+
+        @include for_media(mediumScreen) {
+          justify-content: center;
+        }
+
+        @include for_media(bigTabletScreen) {
+          justify-content: center;
+        }
+      }
+
+      .Contactbtn {
+        padding: .8rem 1.3rem;
+        border-radius: 8px;
+        border: none;
+        background-color: #689c76;
+        color: #ffff;
+        font-weight: 700;
+        cursor: pointer;
+
+        @include for_media(mobileScreen) {
+          // width: 8.983rem;
+          // height: 2.131rem;
+          // display: flex;
+          // justify-content: center;
+          // align-items: center;
+        }
+
+        @include for_media(largeScreen) {
+          // border-radius: 3rem;
+          border: none;
+          background-color: #689c76;
+          color: #ffff;
+          font-weight: "700";
+        }
+      }
+
+      .Requestbtn {
+        width: 12rem;
+        height: 3rem;
+        border-radius: 3rem;
+        background-color: #fff;
+        color: #132e18 !important;
+        font-weight: 700;
+        border: 2px solid #132e18;
+
+        @include for_media(largeScreen) {
+          border-radius: 3rem;
+          background-color: #fff;
+          color: #132e18;
+          font-weight: 700;
+        }
+      }
+
+      p {
+        line-height: 1.2;
+        margin-bottom: 1rem;
+
+        .homelefthead {
+          color: #4f7c5b;
+        }
+      }
+
+      >div:last-child {
+        line-height: 2.344rem;
+        font-weight: 400;
+        color: #4f7c5b;
+        text-align: justify;
+
+        @include for_media(mobileScreen) {
+          margin: 0.5rem 0rem;
+          padding: 0;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+
+    // >div:last-child{
+    //   margin-top: 2rem;
+    // }
+
+    .homeright {
+
+      @include for_media(mediumScreen) {
+        display: flex !important;
+        justify-content: center;
+      }
+
+
+      @include for_media(bigTabletScreen) {
+        display: flex !important;
+        justify-content: center;
+      }
+
+      @include for_media(mobileScreen) {
+        display: none !important;
+      }
+
+      @include for_media(tabletScreen) {
+        display: none !important;
+      }
+
+      .homepic {
+        margin: auto;
+        float: right;
+        width: 80% !important;
+        height: 99% !important;
+      }
+    }
+  }
+}
+
+/******Mobile Screen****/
+@include for_media(mobileScreen) {
+  .homeouter {
+    .homeimage {
+
+      // display: block;
+      // width: 95%;
+      // margin: auto;
+      >div {
+        margin-left: 0rem;
+
+        >div {
+          padding-bottom: 0% !important;
+        }
+      }
+
+      .homeleft {
+        // padding: 25px 0px 20px 0px;
+
+        // .homeleftpic {
+        //   width: 25.5%;
+        //   margin-left: 30%;
+        //   padding-top: 15px;
+        // }
+
+        p {
+          margin-top: 0%;
+          padding-top: 0px;
+          margin-bottom: 1rem;
+        }
+      }
+
+      // >div:last-child {
+      //   margin-top: 2rem;
+      // }
+
+      // .homeright {
+      //   .homepic {
+      //     display: none;
+      //   }
+      // }
+    }
+  }
+}
+
+/******Tablet Screen****/
+@include for_media(tabletScreen) {
+  .homeouter {
+    .homeimage {
+      display: block;
+      margin: auto;
+
+      .homeleft {
+        // padding: 45px 0px 0px 0px;
+
+        .homeleftpic {
+          // width: 25.5%;
+          // margin-left: 30%;
+          padding-top: 15px;
+        }
+
+        p {
+          margin-top: 0%;
+          padding-top: 0px;
+        }
+      }
+
+      .homeright {
+        .homepic {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+/******Big Tablet Screen****/
+@include for_media(bigTabletScreen) {
+  .homeouter {
+    padding-bottom: 15px;
+
+    .homeimage {
+      width: 100%;
+      margin: auto;
+
+      .homeleft {
+        padding: 0 3rem;
+      }
+
+      .homeright {
+        width: 87%;
+      }
+    }
+  }
+}
+
+@include for_media(mediumScreen) {
+  .homeouter {
+    padding-bottom: 15px;
+
+    .homeimage {
+      width: 100%;
+      margin: auto;
+
+      .homeleft {
+        padding: 45px 0px 0px 10px;
+      }
+
+      .homeright {
+        width: 87%;
+      }
+    }
+  }
+}
