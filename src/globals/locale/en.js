@@ -424,7 +424,7 @@ const en = {
     humanize_sub_hero_content_1: 'Igniting Excellence: Enhancing Employee',
     humanize_sub_hero_content_2: 'Engagement at Every Stage',
     humanize_hero_header: 'The Future of ',
-    humanize_hero_subheader:'Employee Engagement',
+    humanize_hero_subheader: 'Employee Engagement',
     humanize_hero_body: 'Revolutionizing Employee Engagement',
     what_is_humanize: 'What is Humanize?',
     employee_engagement: 'Employee Engagement',
@@ -480,8 +480,8 @@ const en = {
     customer_experience_description: 'We are committed to work together to ensure a positive experience for the end user.',
     technology_first: 'Technology First',
     technology_first_description: 'Our API’s enables large and complex organisations to run checks as scale with easy',
-    comprehensive_screening:'Comprehensive Screening',
-    comprehensive_screening_description:'Deliver a robust customer experience with thorough vetting processes.',
+    comprehensive_screening: 'Comprehensive Screening',
+    comprehensive_screening_description: 'Deliver a robust customer experience with thorough vetting processes.',
     best_in_industry_support: 'Best in Industry Support',
     best_in_industry_support_description: 'Experience support that sets the industry standard. Our dedicated team delivers unparalleled expertise and responsiveness, ensuring your needs are met with precision and care. Trust us for support that exceeds expectations.',
     reclytics_carousel_content_1_1: 'Assign assessments to candidates',
@@ -697,6 +697,7 @@ const en = {
     eee: 'Electrical and Electronics Engineering',
     ece: 'Electronics Skill Courses',
     it_industry: 'IT Technologies',
+    contact_me: 'Contact Me',
   },
 };
 

@@ -1,0 +1,29 @@
+$main-color: #705391;
+// $light-bg-color: #F3EDF9;
+$light-bg-color: #f7f7f7;
+$dark-text-color: #4A4A4A;
+
+.aboutSection {
+  background-color: $light-bg-color;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .aboutContentBox {
+    max-width: 800px;
+    text-align: center;
+  }
+
+  .aboutTitle {
+    color: $main-color;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+
+  .aboutDescription {
+    color: $dark-text-color;
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+}

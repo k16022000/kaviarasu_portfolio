@@ -1,0 +1,256 @@
+@import "assets/scss/main.scss";
+
+.alignHeaderToCenter {
+    width: 100%;
+    max-width: 1220px;
+    margin: auto;
+    @media screen and (min-width: 1850px) and (max-width: 1930px) {
+        max-width: 1416px !important;
+      }
+}
+
+
+
+.TermsAndConditions {
+    margin: 7rem 4rem 4rem 4rem;
+
+    @include for_media(mobileScreen) {
+        margin: 2rem;
+    }
+
+    @include for_media(tabletScreen) {
+        margin: 1rem;
+    }
+
+    .completeContent {
+        display: flex;
+        max-width: 1140px;
+        width: 100%;
+        margin: auto;
+        color: #132E18;
+        font-family: lato;
+        @media screen and (min-width: 1850px) and (max-width: 1930px) {
+            max-width: 1368px !important;
+          }
+
+        .leftSideScrollingContent {
+            flex: 0.5;
+            position: sticky;
+            overflow-y: auto;
+            // width: 30%;
+            top: 10px;
+            max-height: 100vh;
+            margin-right: 1rem;
+
+            >div {
+                // top: 20px;
+                position: sticky;
+
+                >ul {
+                    .applyNormalStyles {
+                        list-style-type: none;
+                        padding: 1rem 0em;
+                    }
+
+                    .applyExtraStyles {
+                        list-style-type: none;
+                        padding: 1rem 0em;
+                        color: red;
+                    }
+
+                    >li:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .rightSideContent {
+            flex: 1;
+            // width: 60%;
+
+            // >div[class="termsholder"] {
+
+            //     >span {
+            //         font-size: 1.3rem;
+            //         font-weight: 400;
+            //     }
+
+            //     >div {
+            //         font-size: 1.1rem;
+            //         margin: 1.2rem 0rem;
+            //         text-align: justify;
+            //     }
+            // }
+
+            .normalDivs {
+                
+                .normalDivsDivChild {
+                    font-size: 1.1rem;
+                    margin: 1.2rem 0rem;
+                    text-align: justify;
+
+                    >p {
+                        line-height: 2rem;
+
+                        >a:hover {
+                            cursor: pointer;
+                        }
+
+                        >span:first-child {
+                            font-weight: 600;
+
+                            >a:hover {
+                                cursor: pointer;
+                            }
+
+                            >ul {
+                                >li {
+                                    list-style-type: none;
+                                    line-height: 2rem;
+                                }
+                            }
+                        }
+
+                        >ul {
+                            >li {
+                                list-style-type: none;
+                                line-height: 2rem;
+                            }
+                        }
+                    }
+
+                    >a:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                >p:first-child {
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    color: #1b1c1e;
+                    >a:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .divsWithListInside {
+
+                >p:first-child {
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    color: #1b1c1e;
+
+                    >a:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                >a:hover {
+                    cursor: pointer;
+                }
+
+                .normalDivsDivChild {
+                    font-size: 1.1rem;
+                    margin: 1.2rem 0rem;
+                    text-align: justify;
+
+                    >p {
+                        line-height: 2rem;
+
+                        >a:hover {
+                            cursor: pointer;
+                        }
+                    }
+
+                    >a:hover {
+                        cursor: pointer;
+                    }
+
+                    >ul {
+                        >li {
+                            list-style-type: none;
+                            line-height: 2rem;
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+    }
+
+    .mobileDropdown {
+        margin-bottom: 2rem;
+        position: sticky;
+        top: 0;
+    }
+
+    .menuButton {
+        >i {
+            cursor: pointer;
+            font-size: 1.4rem;
+            text-align: center;
+
+        }
+    }
+
+    .mobileMenu {
+        width: 100% !important;
+
+        .closeButton {
+            font-size: 1.4rem;
+            cursor: pointer;
+            text-align: right;
+            width: 100%;
+        }
+
+        .drawer {
+            text-align: end;
+
+            >ul {
+                list-style-type: none;
+                padding: 1rem 0rem;
+
+                >li {
+                    padding: 0.5rem 0rem;
+                    cursor: pointer;
+                    background-color: grey;
+                    margin: 0.2rem 0rem;
+                    text-align: center;
+                    border-radius: 0.4rem;
+                }
+            }
+        }
+    }
+
+    .leftSideScrollingContent.mobileTerms {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        background-color: #fff;
+        z-index: 999;
+    }
+
+    .leftSideScrollingContent.mobileTerms ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .leftSideScrollingContent.mobileTerms li {
+        display: inline-block;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    .leftSideScrollingContent.mobileTerms li.applyExtraStyles {
+        background-color: #E6E6B3;
+    }
+
+}

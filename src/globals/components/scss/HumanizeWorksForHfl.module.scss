@@ -1,0 +1,98 @@
+@import "assets/scss/main.scss";
+
+.humanizer {
+  background-color: rgba(224, 218, 170, 0.38);
+  margin: 1em 0 4em 0;
+  text-align: left;
+
+  .humanizerHeader {
+    text-align: center;
+    // margin: 6em !important; 
+    padding: 1.5em 0;
+  }
+
+  >div[class="ui grid"] {
+    >div[class="one column row"] {
+      row-gap: 1rem;
+      width: 90% !important;
+      margin-left: 5% !important;
+      padding: 2rem;
+
+      .humanizerCard {
+        box-shadow: 0px 0px 8px 0px #4F7C5B;
+        background: #ffff;
+        padding: 2em;
+        border-radius: 1rem;
+        display: flex !important;
+        justify-content: space-between;
+        width: 50% !important;
+        align-items: center;
+        height: fit-content;
+        gap: 1.3em;
+      }
+
+      .headerAndContent {
+        width: 60%;
+        color: #4F7C5B;
+        margin-left: 1rem;
+        font-weight: 500;
+
+        >div {
+          color: black;
+          margin-bottom: 1rem;
+          font-weight: 700;
+        }
+      }
+    }
+
+    >div[class="two column row"] {
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      gap: 6em;
+
+
+      .humanizerCard {
+        box-shadow: 0px 0px 8px 0px #4F7C5B;
+        background: #ffff;
+        padding: 3em 2em;
+        border-radius: 24px;
+        display: flex !important;
+        justify-content: space-between;
+        width: fit-content !important;
+        align-items: center;
+        // height: 15vw;
+        gap: 1.5em;
+
+        @include for_media(mobileScreen) {
+          box-shadow: 0px 0px 8px 0px #4F7C5B;
+          background: #ffff;
+          padding: 2em;
+          border-radius: 24px;
+          display: flex !important;
+          justify-content: space-between;
+          width: fit-content !important;
+          align-items: center;
+          height: 16vw;
+          gap: 1.5em;
+        }
+
+        text-align: justify !important;
+
+        .headerAndContent {
+          padding-right: 2em;
+          color: #4F7C5B;
+          margin-left: 1rem;
+          font-weight: 500;
+
+          >div {
+            color: black;
+            margin-bottom: 1rem;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+  }
+}

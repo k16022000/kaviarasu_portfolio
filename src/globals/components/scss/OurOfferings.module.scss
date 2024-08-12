@@ -1,0 +1,131 @@
+@import "assets/scss/main.scss";
+
+.skilllistView {
+  margin: 2rem 7rem;
+
+  .title {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .offeringCard {
+    box-shadow: 0 0 1rem #4F7C5B;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: stretch;
+
+    >div:first-child {
+      width: 35%;
+      padding: 2rem;
+
+      .offeringTitle {
+        margin: 1rem auto;
+        margin-bottom: 2rem;
+        width: max-content;
+        padding: .25rem 2rem;
+        border-radius: 3rem;
+        font-weight: 700;
+        max-width: 100%;
+        text-align: center;
+      }
+
+      img {
+        width: 75%;
+        margin: auto;
+      }
+    }
+
+    >div:last-child {
+      width: calc(65% - .5rem);
+      padding: 5rem 2rem;
+
+      .subHeading {
+        font-weight: 700;
+      }
+    }
+
+    p {
+      margin-bottom: 2rem;
+      font-weight: 500 !important;
+    }
+
+    ul>li {
+      font-size: var(--font-size-body-l);
+      line-height: 120%;
+    }
+
+    .splitterLine {
+      min-width: .5rem;
+      min-height: .5rem;
+      border-radius: .5rem;
+      box-shadow: 0 0 .5rem #4F7C5B inset;
+    }
+
+    &:nth-child(3n + 2) {
+      background-color: #E0DAAA;
+
+      .offeringTitle {
+        background-color: white;
+      }
+
+      .splitterLine {
+        box-shadow: 0 0 .5rem #004131 inset;
+      }
+    }
+
+    &:nth-child(3n) {
+      background-color: #689c76;
+
+      .offeringTitle {
+        color: #E0DAAA;
+        background-color: #08150E;
+      }
+      
+      p, ul {
+        color: white;
+      }
+
+      .splitterLine {
+        box-shadow: 0 0 .5rem #004131 inset;
+      }
+    }
+
+    @include for_media(tabletScreen) {
+      flex-direction: column;
+
+      >div:first-child {
+        width: 100%;
+        padding: 2rem;
+      }
+      
+      >div:last-child {
+        width: 100%;
+        padding: 2rem;
+      }
+    }
+
+    @include for_media(mobileScreen) {
+      flex-direction: column;
+
+      >div:first-child {
+        width: 100%;
+        padding: 1rem;
+      }
+      
+      >div:last-child {
+        width: 100%;
+        padding: 1rem;
+      }
+    }
+  }
+
+  @include for_media(mobileScreen) {
+    margin: 2rem;
+  }
+
+  @include for_media(tabletScreen) {
+    margin: 2rem;
+  }
+}

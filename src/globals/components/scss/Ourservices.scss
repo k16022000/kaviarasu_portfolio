@@ -1,0 +1,1730 @@
+@import "assets/scss/main.scss";
+
+.container {
+  padding: 5rem 3rem 0;
+  // background-color: #F6F3E3;
+  height: 100%;
+}
+
+.OurServices {
+  background-image: url("../../../assets/images/featureBG.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  text-align: center;
+  color: white;
+  margin: 2.7rem 5.2rem 2.7rem 5.8rem;
+  @import "assets/scss/main.scss";
+
+  .container {
+    padding: 5rem 3rem 0;
+    // background-color: #F6F3E3;
+    height: 100%;
+  }
+
+  .OurServices {
+    // height: auto;
+    // background-color: #4f7c5b;
+    // padding-bottom: 20px;
+    // margin-bottom: 4.5% !important;
+    background-image: url("../../../assets/images/featureBG.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    text-align: center;
+    color: white;
+    margin: 2.7rem 5.2rem 2.7rem 5.8rem;
+    border-radius: 1rem;
+
+    @include for_media(mobileScreen) {
+      margin: 2.7em 2em 2.7em 2em;
+    }
+
+    > div:last-child {
+      > div {
+        display: flex !important;
+        justify-content: center !important;
+        padding-bottom: 2rem !important;
+      }
+
+      .OurServiceFeatureCard {
+        border-radius: 1em;
+        box-shadow: 4.331709861755371px 4.331709861755371px 8.663419723510742px
+          0px #132e18;
+
+        @include for_media(mobileScreen) {
+          margin-bottom: 0rem;
+        }
+
+        > div {
+          padding: 1.5em 1em;
+
+          @include for_media(mobileScreen) {
+            padding: 0.8em 0.5em;
+          }
+
+          @include for_media(tabletScreen) {
+            margin: 0 !important;
+          }
+
+          > img {
+            height: 50px;
+            width: auto;
+            margin-bottom: 1rem;
+
+            @include for_media(mobileScreen) {
+              height: 30px;
+            }
+          }
+
+          > div[class="header"] {
+            height: 50px;
+            color: #132e18;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include for_media(mobileScreen) {
+              height: 60px;
+              font-size: 1.1em !important;
+            }
+          }
+
+          > div:last-child {
+            color: #4f7c5b;
+
+            @include for_media(mobileScreen) {
+              height: auto !important;
+              font-size: 0.9em;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .service-grid-card {
+    margin: 5px 0 !important;
+  }
+
+  .slide-pointer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em;
+
+    .connectingCircle {
+      width: 1rem;
+      height: 1rem;
+      border: 1px solid #4f7c5b;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .circle {
+      width: 1rem;
+      height: 1rem;
+      background-color: #133a1b;
+      border-radius: 50%;
+    }
+
+    .connectingLine {
+      border: 1px solid #4f7c5b;
+      width: 10%;
+    }
+  }
+
+  .WhiteBg {
+    background-color: white;
+    margin-bottom: 5% !important;
+    // background-image: url("../../../assets/images/featureBG.webp");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // height: auto;
+    // text-align: center;
+    // color: white;
+    // margin: 2.7rem 5.2rem 2.7rem 5.8rem;
+    // border-radius: 1rem;
+  }
+
+  .header_w {
+    text-align: center;
+    padding: 50px 6em 10px 7em;
+    color: white;
+    font-size: 3.6vw;
+
+    @include for_media(mobileScreen) {
+      text-align: center;
+      padding: 20px 0.3em 10px 0.3em;
+      color: white;
+      font-size: 6.6vw !important;
+    }
+  }
+
+  .homeOurServices {
+    > div:first-child {
+      > div:first-child {
+        > div[class="slick-list"] {
+          > div {
+            > div {
+              > div {
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                justify-content: center !important;
+
+                > div {
+                  width: 85%;
+                  margin: 1.5rem 2rem;
+                  height: 35vw;
+                  box-shadow: 5.44444465637207px 5.44444465637207px
+                    16.33333396911621px 0px #4f7c5b;
+                  border-radius: 2rem;
+                  background: linear-gradient(
+                    187.15deg,
+                    #ffffff 2.83%,
+                    #e0daaa 103.82%
+                  );
+
+                  @include for_media(bigTabletScreen) {
+                    margin: 0.5rem 1rem;
+                    height: 38vw;
+                  }
+
+                  @include for_media(wideScreen) {
+                    margin: 0rem 1rem;
+                    height: 38vw;
+                  }
+
+                  > div[class="content"] {
+                    > img {
+                      margin-top: 5vw;
+
+                      @include for_media(bigTabletScreen) {
+                        margin-top: 1vw;
+                        width: auto !important;
+                      }
+
+                      @include for_media(tabletScreen) {
+                        margin-top: 1vw;
+                        width: auto !important;
+                      }
+
+                      @include for_media(largeScreen) {
+                        margin-top: 1vw;
+                        width: auto !important;
+                      }
+
+                      @include for_media(wideScreen) {
+                        margin-top: 1vw;
+                        width: auto !important;
+                      }
+
+                      @include for_media(mediumScreen) {
+                        margin-top: 1vw;
+                        width: auto !important;
+                      }
+                    }
+
+                    // >div[class="header"] {
+                    //   height: 2vh !important;
+                    // }
+
+                    > div:nth-child(2) {
+                      margin: 1vw;
+                      font-size: 2.5rem;
+
+                      @include for_media(bigTabletScreen) {
+                        font-size: 2rem;
+                      }
+
+                      @include for_media(largeScreen) {
+                        font-size: 3rem;
+                      }
+
+                      @include for_media(wideScreen) {
+                        font-size: 3rem;
+                      }
+                    }
+
+                    > div:nth-child(3) {
+                      margin: 1vw;
+                      font-size: 1.8rem;
+
+                      @include for_media(bigTabletScreen) {
+                        font-size: 1.6rem;
+                      }
+
+                      @include for_media(largeScreen) {
+                        font-size: 2rem;
+                      }
+
+                      @include for_media(wideScreen) {
+                        font-size: 2rem;
+                      }
+                    }
+
+                    > button[class="ui button"] {
+                      border: 1px solid #132e18;
+                      color: #132e18;
+                      background: transparent;
+                      border-radius: 25px;
+                      cursor: pointer;
+                      margin-top: 3.5vw;
+                      padding: 0.8rem 2rem;
+                      font-size: 1.3rem;
+                    }
+
+                    > div[class="description"] {
+                      color: #4f7c5b;
+                      margin: 0% !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    > div:last-child {
+      > div {
+        > div {
+          padding: 0 !important;
+
+          @include for_media(mobileScreen) {
+            padding: 0.5em !important;
+          }
+
+          @media screen and (min-width: 1440px) and (max-width: 1920px) {
+            padding: 1em !important;
+          }
+
+          > div {
+            @include for_media(mobileScreen) {
+              padding: 0em !important;
+            }
+
+            @include for_media(tabletScreen) {
+              padding: 0.5em !important;
+            }
+
+            @include for_media(bigTabletScreen) {
+              padding: 1em !important;
+            }
+
+            @include for_media(mediumScreen) {
+              padding: 1em !important;
+            }
+
+            @include for_media(largeScreen) {
+              padding: 1em !important;
+            }
+
+            @include for_media(wideScreen) {
+              padding: 1em !important;
+            }
+
+            > div[class="ui card"] {
+              box-shadow: 3.5438597202301025px 3.5438597202301025px
+                10.631579399108887px 0px #b3bb92;
+              border-radius: 33px;
+              background: linear-gradient(
+                187.15deg,
+                #ffffff 2.83%,
+                #e0daaa 103.82%
+              );
+              height: 17vw;
+
+              @include for_media(mobileScreen) {
+                height: 50vw;
+              }
+
+              @include for_media(tabletScreen) {
+                height: 48vw;
+              }
+
+              > div {
+                cursor: pointer;
+
+                > img {
+                  width: auto;
+                  height: 4.7vw;
+                  margin: 0.8rem 0 1.5rem;
+
+                  @include for_media(mobileScreen) {
+                    height: 15vw;
+                    width: auto;
+                    margin: 0.3rem 0 1rem;
+                  }
+
+                  @include for_media(tabletScreen) {
+                    width: auto;
+                    height: 15vw;
+                  }
+
+                  @include for_media(bigTabletScreen) {
+                    margin: 0rem 0 1rem;
+                  }
+
+                  @include for_media(mediumScreen) {
+                    margin: 0.8rem 0 1rem;
+                  }
+                }
+
+                > div[class="header"] {
+                  margin-top: 0.7rem;
+                  height: 4vw;
+                  font-size: 1.8rem !important;
+                  font-weight: 500 !important;
+
+                  @include for_media(mobileScreen) {
+                    height: 7vw;
+                    font-weight: 700;
+                    font-size: 1.1rem !important;
+                  }
+
+                  @include for_media(tabletScreen) {
+                    height: 6vw;
+                  }
+
+                  @include for_media(bigTabletScreen) {
+                    font-size: 1.4rem !important;
+                  }
+
+                  @include for_media(mediumScreen) {
+                    font-size: 1.5rem !important;
+                    height: 2vw;
+                  }
+                }
+
+                > div[class="description"] {
+                  margin-top: 1em;
+                  font-size: 1.1rem !important;
+
+                  @include for_media(bigTabletScreen) {
+                    font-size: 0.7rem !important;
+                    line-height: 0.7rem;
+                  }
+
+                  @include for_media(mediumScreen) {
+                    font-size: 1rem !important;
+                    margin-top: 0.5em !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .header_b {
+    text-align: center !important;
+    padding: 50px 0px 10px 0px;
+    color: rgb(12, 10, 10);
+    font-size: 4.768rem;
+
+    @include for_media(largeScreen) {
+      font-size: 3.576rem;
+    }
+  }
+
+  .Hr_tagW {
+    width: 51%;
+    height: 3px;
+    background-color: white;
+  }
+
+  .Hr_tagB {
+    width: 51%;
+    height: 4px;
+    background-color: rgb(10, 10, 10);
+  }
+
+  .column {
+    margin: 5px 0 !important;
+
+    @include for_media(mobileScreen) {
+      margin: 0 !important;
+    }
+  }
+
+  .column > div > img {
+    margin: auto;
+    // width: 30%;
+    // aspect-ratio: 3/2;
+    object-fit: contain;
+
+    @include for_media(mobileScreen) {
+      object-fit: cover;
+    }
+  }
+
+  .column > div > .platform_img {
+    margin: auto;
+    width: 50%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+  }
+
+  .column > .white {
+    font-size: 1.5vw;
+    color: white;
+    width: 100%;
+    margin-top: 20px !important;
+    margin: auto;
+    text-align: center;
+  }
+
+  .column > .serviceP {
+    font-size: 1.8vw;
+    color: white;
+    width: 85%;
+    margin-top: 20px !important;
+    margin: auto;
+    text-align: center;
+  }
+
+  .column > .black {
+    font-size: 1.8vw;
+    color: rgb(19, 8, 8);
+    width: 90%;
+    margin-top: 20px !important;
+    margin: auto;
+    text-align: center;
+  }
+
+  .ui.grid.service_grid {
+    margin: auto;
+    width: 90% !important;
+
+    > div {
+      > div {
+        > div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .ui.grid.service_grid > .row {
+    width: 95% !important;
+    margin: auto !important;
+  }
+
+  .btn-section {
+    width: 89%;
+    height: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .btn-section > a > .knowmorebtn {
+    border: 1px solid red !important;
+    font-size: 1.6vw !important;
+    padding: 8px 20px 10px 20px !important;
+    right: 90% !important;
+    margin-top: -9% !important;
+    color: white;
+    border-radius: 30px;
+    background-color: #132e18 !important;
+    border: none !important;
+  }
+
+  .btn-section > a > .knowmorebtn:hover {
+    color: white;
+  }
+
+  #green {
+    color: #4f7c5b;
+  }
+
+  @include for_media(bigTabletScreen) {
+    // .column>div>img {
+    //   margin: auto;
+    //   width: 35%;
+    //   aspect-ratio: 3/2;
+    //   object-fit: contain;
+    // }
+
+    .header_w {
+      font-size: 4.5vw;
+    }
+
+    .header_b {
+      font-size: 4.6vw;
+    }
+
+    .column > .serviceP {
+      width: 98% !important;
+      font-size: 2.1vw !important;
+    }
+
+    .column > .black {
+      width: 100% !important;
+      font-size: 2.1vw !important;
+    }
+  }
+
+  @include for_media(tabletScreen) {
+    // .column>div>img {
+    //   width: 30%;
+    // }
+
+    // .column>div {
+    //   width: 18rem;
+    // }
+
+    .column > div > .platform_img {
+      width: 35%;
+    }
+
+    .ui.grid.service_grid > .row > .seven.wide.mobile.column {
+      width: 50% !important;
+      padding: 0px !important;
+    }
+
+    .seven.wide.mobile.column > .serviceP {
+      font-size: 3.2vw !important;
+      width: 80% !important;
+    }
+
+    .ui.grid.service_grid {
+      width: 100% !important;
+      margin: auto;
+    }
+
+    .column > .white {
+      font-size: 3.2vw !important;
+      width: 100% !important;
+    }
+
+    .column > .black {
+      font-size: 3.3vw;
+      width: 80%;
+    }
+
+    .ui.grid.service_grid > .row {
+      width: 95% !important;
+      margin: auto !important;
+    }
+
+    .header_w {
+      font-size: 7.6vw;
+    }
+
+    .header_b {
+      font-size: 8.8vw !important;
+    }
+
+    .btn-section > a > .knowmorebtn {
+      font-size: 3.2vw !important;
+    }
+  }
+
+  @include for_media(mobileScreen) {
+    // .column>div>img {
+    //   width: 30%;
+    // }
+
+    // .column>div>.platform_img {
+    //   width: 35%;
+    // }
+
+    .ui.grid.service_grid > .row > .seven.wide.mobile.column {
+      width: 50% !important;
+      padding: 1rem !important;
+    }
+
+    .seven.wide.mobile.column > .serviceP {
+      font-size: 4vw !important;
+      width: 90% !important;
+    }
+
+    .ui.grid.service_grid {
+      width: 100% !important;
+      margin: auto;
+    }
+
+    .column > .white {
+      font-size: 4vw !important;
+      width: 100% !important;
+    }
+
+    .column > .black {
+      font-size: 4vw !important;
+      width: 90%;
+    }
+
+    .ui.grid.service_grid > .row {
+      width: 95% !important;
+      margin: auto !important;
+    }
+
+    .header_w {
+      font-size: 7.6vw;
+    }
+
+    .header_b {
+      font-size: 8.8vw !important;
+    }
+
+    .btn-section > a > .knowmorebtn {
+      font-size: 3.2vw !important;
+    }
+  }
+
+  .hrsuiteouter {
+    height: 100% !important;
+    padding: 3rem 3rem 0;
+    background-color: #f6f3e3;
+  }
+
+  .boxContainer {
+    display: flex;
+    width: 100%;
+    height: 40rem;
+    padding: 1rem 10rem 1em 10rem;
+
+    @include for_media(largeScreen) {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 40rem;
+      padding: 1rem 6rem 1em 1rem;
+    }
+  }
+
+  .homeleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    height: 90%;
+    margin: 0 1rem 1rem 2rem;
+
+    @include for_media(mobileScreen) {
+      margin: 0 0rem 2rem 0rem;
+    }
+
+    @include for_media(largeScreen) {
+      // margin: 0 6rem 6rem 0rem;
+    }
+  }
+
+  .homeright {
+    height: 90%;
+    width: 66.313rem;
+    background-color: white;
+    border-radius: 2rem;
+    margin: 0rem 0rem 0rem 3rem;
+
+    @include for_media(largeScreen) {
+      background-color: white;
+      border-radius: 2rem;
+    }
+  }
+
+  .insBox {
+    box-shadow: 0px 0px 4px 0px #00000040 !important;
+    width: 100% !important;
+    border-radius: 0.75rem;
+  }
+
+  .insCard {
+    width: 100% !important;
+
+    text-align: justify;
+    cursor: pointer;
+    border: none;
+
+    @include for_media(largeScreen) {
+    }
+  }
+
+  .singleCard {
+    display: flex;
+  }
+
+  .insimg {
+    margin: 1rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .insSubtitle{
+  text-align: left !important;
+  padding: 0.5rem 0rem !important;
+  font-weight: 500 !important;
+  }
+
+  .leftBox {
+    display: flex;
+    flex-flow: wrap;
+    padding: 3rem 3rem 1rem 3rem !important;
+    // margin-top: 1rem
+  }
+
+  .horizandalLine {
+    background-color: #e4deae;
+    height: 0.2em;
+    left: 74%;
+    width: 100%;
+    bottom: 34.5%;
+  }
+
+  .ReclyticsContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+
+  .ReclyticsBox {
+    background-color: #e4e7d9 !important;
+    border-radius: 0.875rem;
+    padding: 1rem;
+  }
+
+  .textContainer {
+    width: 50%;
+    text-align: justify;
+  }
+
+  .textContainerfull {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .knowbtn {
+    background-color: #689c76 !important;
+    border-radius: 5rem !important;
+    color: #ffffff !important;
+    width: 9rem;
+    height: 3rem;
+  }
+
+  .btnBox {
+    display: flex;
+    justify-content: end;
+    width: 65%;
+    padding-bottom: 2rem;
+  }
+  > div:last-child {
+    > div {
+      display: flex !important;
+      justify-content: center !important;
+      padding-bottom: 2rem !important;
+    }
+
+    .OurServiceFeatureCard {
+      border-radius: 1em;
+      box-shadow: 4.331709861755371px 4.331709861755371px 8.663419723510742px
+        0px #132e18;
+
+      @include for_media(mobileScreen) {
+        margin-bottom: 0rem;
+      }
+
+      > div {
+        padding: 1.5em 1em;
+
+        @include for_media(mobileScreen) {
+          padding: 0.8em 0.5em;
+        }
+
+        @include for_media(tabletScreen) {
+          margin: 0 !important;
+        }
+
+        > img {
+          height: 50px;
+          width: auto;
+          margin-bottom: 1rem;
+
+          @include for_media(mobileScreen) {
+            height: 30px;
+          }
+        }
+
+        > div[class="header"] {
+          height: 50px;
+          color: #132e18;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          @include for_media(mobileScreen) {
+            height: 60px;
+            font-size: 1.1em !important;
+          }
+        }
+
+        > div:last-child {
+          color: #4f7c5b;
+
+          @include for_media(mobileScreen) {
+            height: auto !important;
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+  }
+}
+
+.service-grid-card {
+  margin: 5px 0 !important;
+}
+
+.slide-pointer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em;
+
+  .connectingCircle {
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #4f7c5b;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .circle {
+    width: 1rem;
+    height: 1rem;
+    background-color: #133a1b;
+    border-radius: 50%;
+  }
+
+  .connectingLine {
+    border: 1px solid #4f7c5b;
+    width: 10%;
+  }
+}
+
+.WhiteBg {
+  background-color: white;
+  margin-bottom: 5% !important;
+  // background-image: url("../../../assets/images/featureBG.webp");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // height: auto;
+  // text-align: center;
+  // color: white;
+  // margin: 2.7rem 5.2rem 2.7rem 5.8rem;
+  // border-radius: 1rem;
+}
+
+.header_w {
+  text-align: center;
+  padding: 50px 6em 10px 7em;
+  color: white;
+  font-size: 3.6vw;
+
+  @include for_media(mobileScreen) {
+    text-align: center;
+    padding: 20px 0.3em 10px 0.3em;
+    color: white;
+    font-size: 6.6vw !important;
+  }
+}
+
+.homeOurServices {
+  > div:first-child {
+    > div:first-child {
+      > div[class="slick-list"] {
+        > div {
+          > div {
+            > div {
+              display: flex !important;
+              flex-direction: column !important;
+              align-items: center !important;
+              justify-content: center !important;
+
+              > div {
+                width: 85%;
+                margin: 1.5rem 2rem;
+                height: 35vw;
+                box-shadow: 5.44444465637207px 5.44444465637207px
+                  16.33333396911621px 0px #4f7c5b;
+                border-radius: 2rem;
+                background: linear-gradient(
+                  187.15deg,
+                  #ffffff 2.83%,
+                  #e0daaa 103.82%
+                );
+
+                @include for_media(bigTabletScreen) {
+                  margin: 0.5rem 1rem;
+                  height: 38vw;
+                }
+
+                @include for_media(wideScreen) {
+                  margin: 0rem 1rem;
+                  height: 38vw;
+                }
+
+                > div[class="content"] {
+                  > img {
+                    margin-top: 5vw;
+
+                    @include for_media(bigTabletScreen) {
+                      margin-top: 1vw;
+                      width: auto !important;
+                    }
+
+                    @include for_media(tabletScreen) {
+                      margin-top: 1vw;
+                      width: auto !important;
+                    }
+
+                    @include for_media(largeScreen) {
+                      margin-top: 1vw;
+                      width: auto !important;
+                    }
+
+                    @include for_media(wideScreen) {
+                      margin-top: 1vw;
+                      width: auto !important;
+                    }
+
+                    @include for_media(mediumScreen) {
+                      margin-top: 1vw;
+                      width: auto !important;
+                    }
+                  }
+
+                  // >div[class="header"] {
+                  //   height: 2vh !important;
+                  // }
+
+                  > div:nth-child(2) {
+                    margin: 1vw;
+                    font-size: 2.5rem;
+
+                    @include for_media(bigTabletScreen) {
+                      font-size: 2rem;
+                    }
+
+                    @include for_media(largeScreen) {
+                      font-size: 3rem;
+                    }
+
+                    @include for_media(wideScreen) {
+                      font-size: 3rem;
+                    }
+                  }
+
+                  > div:nth-child(3) {
+                    margin: 1vw;
+                    font-size: 1.8rem;
+
+                    @include for_media(bigTabletScreen) {
+                      font-size: 1.6rem;
+                    }
+
+                    @include for_media(largeScreen) {
+                      font-size: 2rem;
+                    }
+
+                    @include for_media(wideScreen) {
+                      font-size: 2rem;
+                    }
+                  }
+
+                  > button[class="ui button"] {
+                    border: 1px solid #132e18;
+                    color: #132e18;
+                    background: transparent;
+                    border-radius: 25px;
+                    cursor: pointer;
+                    margin-top: 3.5vw;
+                    padding: 0.8rem 2rem;
+                    font-size: 1.3rem;
+                  }
+
+                  > div[class="description"] {
+                    color: #4f7c5b;
+                    margin: 0% !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  > div:last-child {
+    > div {
+      > div {
+        padding: 0 !important;
+
+        @include for_media(mobileScreen) {
+          padding: 0.5em !important;
+        }
+
+        @media screen and (min-width: 1440px) and (max-width: 1920px) {
+          padding: 1em !important;
+        }
+
+        > div {
+          @include for_media(mobileScreen) {
+            padding: 0em !important;
+          }
+
+          @include for_media(tabletScreen) {
+            padding: 0.5em !important;
+          }
+
+          @include for_media(bigTabletScreen) {
+            padding: 1em !important;
+          }
+
+          @include for_media(mediumScreen) {
+            padding: 1em !important;
+          }
+
+          @include for_media(largeScreen) {
+            padding: 1em !important;
+          }
+
+          @include for_media(wideScreen) {
+            padding: 1em !important;
+          }
+
+          > div[class="ui card"] {
+            box-shadow: 3.5438597202301025px 3.5438597202301025px
+              10.631579399108887px 0px #b3bb92;
+            border-radius: 33px;
+            background: linear-gradient(
+              187.15deg,
+              #ffffff 2.83%,
+              #e0daaa 103.82%
+            );
+            height: 17vw;
+
+            @include for_media(mobileScreen) {
+              height: 50vw;
+            }
+
+            @include for_media(tabletScreen) {
+              height: 48vw;
+            }
+
+            > div {
+              cursor: pointer;
+
+              > img {
+                width: auto;
+                height: 4.7vw;
+                margin: 0.8rem 0 1.5rem;
+
+                @include for_media(mobileScreen) {
+                  height: 15vw;
+                  width: auto;
+                  margin: 0.3rem 0 1rem;
+                }
+
+                @include for_media(tabletScreen) {
+                  width: auto;
+                  height: 15vw;
+                }
+
+                @include for_media(bigTabletScreen) {
+                  margin: 0rem 0 1rem;
+                }
+
+                @include for_media(mediumScreen) {
+                  margin: 0.8rem 0 1rem;
+                }
+              }
+
+              > div[class="header"] {
+                margin-top: 0.7rem;
+                height: 4vw;
+                font-size: 1.8rem !important;
+                font-weight: 500 !important;
+
+                @include for_media(mobileScreen) {
+                  height: 7vw;
+                  font-weight: 700;
+                  font-size: 1.1rem !important;
+                }
+
+                @include for_media(tabletScreen) {
+                  height: 6vw;
+                }
+
+                @include for_media(bigTabletScreen) {
+                  font-size: 1.4rem !important;
+                }
+
+                @include for_media(mediumScreen) {
+                  font-size: 1.5rem !important;
+                  height: 2vw;
+                }
+              }
+
+              > div[class="description"] {
+                margin-top: 1em;
+                font-size: 1.1rem !important;
+
+                @include for_media(bigTabletScreen) {
+                  font-size: 0.7rem !important;
+                  line-height: 0.7rem;
+                }
+
+                @include for_media(mediumScreen) {
+                  font-size: 1rem !important;
+                  margin-top: 0.5em !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.header_b {
+  text-align: center !important;
+  padding: 50px 0px 10px 0px;
+  color: rgb(12, 10, 10);
+  font-size: 4.768rem;
+
+  @include for_media(largeScreen) {
+    font-size: 3.576rem;
+  }
+}
+
+.Hr_tagW {
+  width: 51%;
+  height: 3px;
+  background-color: white;
+}
+
+.Hr_tagB {
+  width: 51%;
+  height: 4px;
+  background-color: rgb(10, 10, 10);
+}
+
+.column {
+  margin: 5px 0 !important;
+
+  @include for_media(mobileScreen) {
+    margin: 0 !important;
+  }
+}
+
+.column > div > img {
+  margin: auto;
+  // width: 30%;
+  // aspect-ratio: 3/2;
+  object-fit: contain;
+
+  @include for_media(mobileScreen) {
+    object-fit: cover;
+  }
+}
+
+.column > div > .platform_img {
+  margin: auto;
+  width: 50%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+
+.column > .white {
+  font-size: 1.5vw;
+  color: white;
+  width: 100%;
+  margin-top: 20px !important;
+  margin: auto;
+  text-align: center;
+}
+
+.column > .serviceP {
+  font-size: 1.8vw;
+  color: white;
+  width: 85%;
+  margin-top: 20px !important;
+  margin: auto;
+  text-align: center;
+}
+
+.column > .black {
+  font-size: 1.8vw;
+  color: rgb(19, 8, 8);
+  width: 90%;
+  margin-top: 20px !important;
+  margin: auto;
+  text-align: center;
+}
+
+.ui.grid.service_grid {
+  margin: auto;
+  width: 90% !important;
+
+  > div {
+    > div {
+      > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.ui.grid.service_grid > .row {
+  width: 95% !important;
+  margin: auto !important;
+}
+
+.btn-section {
+  width: 89%;
+  height: 30px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-section > a > .knowmorebtn {
+  border: 1px solid red !important;
+  font-size: 1.6vw !important;
+  padding: 8px 20px 10px 20px !important;
+  right: 90% !important;
+  margin-top: -9% !important;
+  color: white;
+  border-radius: 30px;
+  background-color: #132e18 !important;
+  border: none !important;
+}
+
+.btn-section > a > .knowmorebtn:hover {
+  color: white;
+}
+
+#green {
+  color: #4f7c5b;
+}
+
+@include for_media(bigTabletScreen) {
+  // .column>div>img {
+  //   margin: auto;
+  //   width: 35%;
+  //   aspect-ratio: 3/2;
+  //   object-fit: contain;
+  // }
+
+  .header_w {
+    font-size: 4.5vw;
+  }
+
+  .header_b {
+    font-size: 4.6vw;
+  }
+
+  .column > .serviceP {
+    width: 98% !important;
+    font-size: 2.1vw !important;
+  }
+
+  .column > .black {
+    width: 100% !important;
+    font-size: 2.1vw !important;
+  }
+}
+
+@include for_media(tabletScreen) {
+  // .column>div>img {
+  //   width: 30%;
+  // }
+
+  // .column>div {
+  //   width: 18rem;
+  // }
+
+  .column > div > .platform_img {
+    width: 35%;
+  }
+
+  .ui.grid.service_grid > .row > .seven.wide.mobile.column {
+    width: 50% !important;
+    padding: 0px !important;
+  }
+
+  .seven.wide.mobile.column > .serviceP {
+    font-size: 3.2vw !important;
+    width: 80% !important;
+  }
+
+  .ui.grid.service_grid {
+    width: 100% !important;
+    margin: auto;
+  }
+
+  .column > .white {
+    font-size: 3.2vw !important;
+    width: 100% !important;
+  }
+
+  .column > .black {
+    font-size: 3.3vw;
+    width: 80%;
+  }
+
+  .ui.grid.service_grid > .row {
+    width: 95% !important;
+    margin: auto !important;
+  }
+
+  .header_w {
+    font-size: 7.6vw;
+  }
+
+  .header_b {
+    font-size: 8.8vw !important;
+  }
+
+  .btn-section > a > .knowmorebtn {
+    font-size: 3.2vw !important;
+  }
+}
+
+@include for_media(mobileScreen) {
+  // .column>div>img {
+  //   width: 30%;
+  // }
+
+  // .column>div>.platform_img {
+  //   width: 35%;
+  // }
+
+  .ui.grid.service_grid > .row > .seven.wide.mobile.column {
+    width: 50% !important;
+    padding: 1rem !important;
+  }
+
+  .seven.wide.mobile.column > .serviceP {
+    font-size: 4vw !important;
+    width: 90% !important;
+  }
+
+  .ui.grid.service_grid {
+    width: 100% !important;
+    margin: auto;
+  }
+
+  .column > .white {
+    font-size: 4vw !important;
+    width: 100% !important;
+  }
+
+  .column > .black {
+    font-size: 4vw !important;
+    width: 90%;
+  }
+
+  .ui.grid.service_grid > .row {
+    width: 95% !important;
+    margin: auto !important;
+  }
+
+  .header_w {
+    font-size: 7.6vw;
+  }
+
+  .header_b {
+    font-size: 8.8vw !important;
+  }
+
+  .btn-section > a > .knowmorebtn {
+    font-size: 3.2vw !important;
+  }
+}
+
+.hrsuiteouter {
+  height: 100% !important;
+  background-color: #f6f3e3 !important;
+  padding: 4rem !important;
+  @include for_media(largeScreen) {
+    padding: 4rem 2rem !important;
+  }
+  @include for_media(mediumScreen) {
+    padding: 2rem 0rem !important;
+  }
+  @include for_media(bigTabletScreen) {
+    padding: 2rem 0rem !important;
+  }
+  
+}
+
+.techsuite-header {
+  text-align: center;
+}
+
+.boxContainer {
+  // display: flex;
+  // align-items: center;
+
+  // /* justify-content: space-between; */
+  // width: 100%;
+  // height: 40rem;
+  // padding: 1rem 1rem 1em 10rem;
+  display: flex;
+  // justify-content: space-between;
+  width: 100%;
+  height: 40rem;
+  padding: 1rem 10rem 1em 10rem;
+
+  @include for_media(largeScreen) {
+    // height: 50rem;
+    display: flex;
+    align-items: center;
+
+    /* justify-content: space-between; */
+    width: 100%;
+    height: 40rem;
+    padding: 1rem 6rem 1em 1rem;
+  }
+}
+
+.homeleft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  height: 90%;
+  margin: 0 1rem 1rem 2rem;
+
+  @include for_media(mobileScreen) {
+    margin: 0 0rem 2rem 0rem;
+  }
+
+  @include for_media(largeScreen) {
+    // margin: 0 6rem 6rem 0rem;
+  }
+}
+
+.homeright {
+  height: 90%;
+  width: 66.313rem;
+  background-color: white;
+  border-radius: 2rem;
+  margin: 0rem 0rem 0rem 3rem;
+
+  @include for_media(largeScreen) {
+    background-color: white;
+    border-radius: 2rem;
+  }
+}
+
+.insBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 1rem;
+  .insCard {
+    // width: 21rem;
+    background-color: transparent !important;
+
+    border-radius: 0.75rem;
+    // padding: 1rem 1rem 1rem 1rem;
+    text-align: justify;
+    // height: 5rem;
+    cursor: pointer;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0rem !important;
+
+    @include for_media(largeScreen) {
+      // width: 22rem;
+    }
+
+    @include for_media(mediumScreen) {
+     padding: 0rem !important;
+    }
+    @include for_media(bigTabletScreen) {
+      padding: 0rem !important;
+     }
+  }
+
+  .active {
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2509803922) !important;
+    background-color: white !important;
+    border-radius: 0.75rem !important;
+  }
+
+  // height: 100vh !important;
+}
+
+.outsideContainer {
+  display: flex !important;
+  justify-content: space-around !important;
+  padding: 1rem 2rem !important;
+  margin-top: 2rem !important;
+  @include for_media(largeScreen) {
+    justify-content: center !important;
+  }
+  @include for_media(mediumScreen) {
+    justify-content: start !important;
+    padding: 1rem  !important;
+  }
+  @include for_media(bigTabletScreen) {
+    justify-content: start !important;
+    padding: 1rem  !important;
+  }
+}
+
+.singleCard {
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+
+  >div {
+    >div:first-child {
+      font-weight: 700;
+      color: #689C76;
+    }
+
+    >div:last-child >p[fontas="sub heading"] {
+      font-weight: 400 !important;
+      text-align: left;
+    }
+  }
+}
+
+.insimg {
+  margin: 0 1rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+.insSubtitle{
+  text-align: left !important;
+  padding: 0.5rem 0rem !important;
+  font-weight: 500 !important;
+  }
+
+.leftBox {
+  display: flex;
+  flex-flow: wrap;
+  padding: 4rem !important;
+  border-radius: 1.85rem !important;
+  min-height: 80% !important;
+  @include for_media(mediumScreen) {
+    padding: 2rem !important;
+  }
+  @include for_media(bigTabletScreen) {
+    padding: 2rem !important;
+  }
+
+}
+
+.horizandalLine {
+  background-color: #e4deae;
+  height: 0.2em;
+  left: 74%;
+  width: 100%;
+  bottom: 34.5%;
+}
+
+.ReclyticsContainer {
+  display: flex;
+  margin-top: 0rem !important;
+}
+
+.ReclyticsBox {
+  background-color: #e4e7d9 !important;
+  border-radius: 0.875rem !important;
+  padding: 1.5rem !important;
+  font-size: 0.875rem !important;
+  border: none !important;
+  min-height: 8rem !important;
+
+  >div:first-child {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #132E18;
+  }
+
+  >div:last-child {
+    text-align: end;
+    color: #689C76;
+
+    >i {
+      cursor: pointer;
+    }
+  }
+
+  @include for_media(largeScreen) {
+    padding: 1rem !important;
+  }
+}
+
+.textContainer {
+  width: 50%;
+  text-align: left;
+
+  p[fontas="sub heading"] {
+    font-weight: 400 !important;
+  }
+
+  >div:first-child {
+    margin-bottom: 1rem;
+    font-weight: 700;
+
+    +div {
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.textContainerfull {
+  width: 100%;
+  text-align: justify;
+  // padding: 2rem 8rem 2rem 4rem;
+
+  >div:first-child {
+    margin-bottom: 1rem;
+    font-weight: 700;
+
+    +div {
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+  }
+
+  p[fontas="sub heading"] {
+    font-weight: 400 !important;
+  }
+}
+
+.knowbtn {
+  background-color: #689c76 !important;
+  border-radius: 5rem !important;
+  color: #ffffff !important;
+  width: 9rem;
+  height: 3rem;
+}
+
+.btnBox {
+  display: flex;
+  justify-content: end;
+  width: 65%;
+  padding-bottom: 2rem;
+  margin-top: 1rem;
+}

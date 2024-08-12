@@ -1,0 +1,529 @@
+@import "assets/scss/main.scss";
+
+.skilllistView {
+    padding: 2em 6em;
+
+    @include for_media(mobileScreen) {
+        padding: 2em 3em;
+    }
+
+    >div[class="ui grid"] {
+
+        >div[class="two column row foundationSkills"] {
+            box-shadow: 0px 0px 16.6px 0px #4F7C5B !important;
+            border-radius: 24px !important;
+            background-color: #FFFFFF;
+            margin-bottom: 4em !important;
+            height: 26vw;
+
+            >div {
+                >div {
+                    text-align: center;
+                    border-radius: 2em;
+                    background: #FFFFFF;
+                    color: #132E18;
+                    margin-bottom: 1em !important;
+                    @include for_media(largeScreen) {
+                        margin-top: 0.5rem;
+                    }
+            
+                    >h3 {
+                        padding: 1% !important;
+                    }
+                }
+
+                .horizandalLine {
+                    box-shadow: 0px 0px 8.4px 0px #004131 inset;
+                    height: 0.5rem;
+                    box-shadow: 0px 0px 8.4px 0px #004131 inset;
+                    transform: rotate(90deg);
+                    position: relative;
+                    left: 67%;
+                    width: 80%;
+                    bottom: 6.2vw;
+                    @include for_media(largeScreen) {
+                        bottom: 9.5vw;
+                    }
+                    @include for_media(wideScreen) {
+                        bottom: 22.55%;
+                    }
+                }
+
+                >div:last-child {
+                    text-align: center;
+                    border-radius: 2em;
+                    background: #FFFFFF;
+                    color: #132E18;
+                    margin-bottom: 1em !important;
+                }
+            }
+
+            >div:nth-child(2) {
+                padding: 3em;
+                line-height: 2em;
+                padding-top: 0em !important;
+                color: #132E18;
+                // overflow: scroll;
+                height: 23vw;
+                font-size: 1.3rem;
+                width: 66% !important;
+
+                .para {
+                    color: #4F7C5B;
+                }
+
+                >p {
+                    margin-bottom: 4em;
+                }
+
+                >ul {
+                    padding-left: 1.5rem !important;
+                }
+
+                @include for_media(largeScreen) {
+                    font-size: 1rem;
+                }
+            }
+
+            >div:last-child {
+                .bluePrint {
+                    text-align: justify;
+                    border-radius: 2em;
+                    background: #E0DAAA;
+                    color: #4F7C5B;
+                    padding: 2em !important;
+                    line-height: 2em;
+                    // overflow: scroll;
+                    height: 23vw;
+                    font-size: 1.5rem;
+
+                    @include for_media(largeScreen) {
+                        font-size: 1rem;
+                    }
+
+                    >h3 {
+                        color: #132E18;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        >div[class="two column row applicationSkills"] {
+            box-shadow: 0px 0px 16.6px 0px #4F7C5B !important;
+            border-radius: 24px !important;
+            background-color: #E0DAAA;
+            margin-bottom: 4em !important;
+            height: 26vw;
+
+            >div {
+                >div {
+                    text-align: center;
+                    border-radius: 2em;
+                    background: #FFFFFF;
+                    color: #132E18;
+                    margin-bottom: 1em !important;
+
+                    >h3 {
+                        padding: 1% !important;
+                    }
+                }
+
+                >img {
+                    width: 89% !important;
+                }
+
+                .horizandalLine {
+                    box-shadow: 0px 0px 8.4px 0px #004131 inset;
+                    height: 0.5em;
+                    box-shadow: 0px 0px 8.4px 0px #004131 inset;
+                    transform: rotate(90deg);
+                    position: relative;
+                    left: 68%;
+                    width: 80%;
+                    bottom: 7.7vw;
+
+                    // @include for_media(largeScreen) {
+                    //     // bottom: 31%;
+                    //     left: 67%;
+                    // }
+
+                    @include for_media(largeScreen) {
+                        left: 67%;
+                        margin-bottom: 5rem !important;
+                    }
+                }
+            }
+
+            >div:nth-child(2) {
+                padding: 3em;
+                line-height: 2.5em;
+                padding-top: 0em !important;
+                color: #132E18;
+                // overflow: scroll;
+                height: 23vw;
+                font-size: 1.3rem;
+                width: 66% !important;
+
+                >p {
+                    margin-bottom: 4em;
+                }
+
+                >ul {
+                    padding-left: 1.5rem !important;
+                }
+
+                @include for_media(largeScreen) {
+                    font-size: 1rem;
+                }
+            }
+
+            >div:last-child {
+                .bluePrint {
+                    text-align: justify;
+                    border-radius: 2em;
+                    background: #FFFFFF;
+                    color: #4F7C5B;
+                    padding: 2em !important;
+                    line-height: 2em;
+                    height: 23vw;
+                    // overflow: scroll;
+                    font-size: 1.5rem;
+
+                    @include for_media(largeScreen) {
+                        font-size: 1rem;
+                    }
+
+                    >h3 {
+                        color: #132E18;
+                    }
+                }
+            }
+        }
+
+        >div[class="two column row nicheSkills"] {
+            box-shadow: 0px 0px 16.6px 0px #4F7C5B !important;
+            border-radius: 24px !important;
+            background-color: #689C76;
+            margin-bottom: 4em !important;
+            display: flex !important;
+            flex-direction: row;
+            height: 26vw;
+
+            >div {
+                >div {
+                    text-align: center;
+                    border-radius: 2em;
+                    background: #08150E;
+                    color: #E0DAAA;
+                    margin-bottom: 1em !important;
+
+                    >h3 {
+                        padding: 1% !important;
+                    }
+                }
+
+                .horizandalLine {
+                    box-shadow: 0px 0px 8.4px 0px #004131 inset;
+                    height: 0.5em;
+                    box-shadow: 0px 0px 8.4px 0px #004131 inset;
+                    transform: rotate(90deg);
+                    position: relative;
+                    left: 67%;
+                    width: 80%;
+                    // bottom: 35%;
+                    bottom: 10.2vw;
+                    background: none;
+
+                    @include for_media(largeScreen) {
+                        // bottom: 31%;
+                        left: 66%;
+                        bottom: 10.4vw;
+                    }
+                    // @include for_media(mediumScreen) {
+                    //     // bottom: 31%;
+                    //     left: 63%;
+                    //     bottom: 7.5vw;
+                    // }
+                }
+            }
+
+            >div:nth-child(2) {
+                padding: 3em;
+                line-height: 2em;
+                padding-top: 0em !important;
+                color: #FFFFFF;
+                // overflow: scroll;
+                height: 23vw;
+                font-size: 1.3rem;
+                // width: 66% !important;
+
+                >p {
+                    margin-bottom: 4em;
+                }
+
+                >h3 {
+                    color: #08150E;
+                }
+
+                >ul {
+                    // margin-top: 6em;
+                    padding-left: 1.5rem !important;
+                }
+
+                @include for_media(largeScreen) {
+                    font-size: 1rem;
+                }
+            }
+
+            >div:last-child {
+                .bluePrint {
+                    text-align: justify;
+                    border-radius: 2em;
+                    background: #08150E;
+                    color: #FFFFFF;
+                    padding: 2em !important;
+                    // overflow: scroll;
+                    line-height: 2.5em;
+                    height: 23vw;
+                    font-size: 1rem;
+                    font-size: 1.5rem;
+
+                    @include for_media(largeScreen) {
+                        font-size: 1rem;
+                    }
+
+                    >h3 {
+                        color: #E0DAAA;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        >div[class="one column row foundationSkills"] {
+            box-shadow: 0px 0px 16.6px 0px #4F7C5B !important;
+            border-radius: 24px !important;
+            background-color: #FFFFFF;
+            margin-bottom: 4em !important;
+            height: 188vw;
+            @include for_media(mobileScreen) {
+            
+                height: max-content;
+                }
+
+            >div {
+                >div {
+                    text-align: center;
+                    border-radius: 2em;
+                    background: #FFFFFF;
+                    color: #132E18;
+                    margin-bottom: 1em !important;
+
+                    >h3 {
+                        padding: 1% !important;
+                    }
+                }
+
+                .horizandalLine {
+                    box-shadow: 0px 0px 8.4px 0px #004131 inset;
+                    height: 0.5em;
+                    box-shadow: 0px 0px 8.4px 0px #004131 inset;
+                    position: relative;
+                    left: 1em;
+                    width: 90%;
+                    top: 2em;
+                }
+
+                >div:last-child {
+                    text-align: center;
+                    border-radius: 2em;
+                    background: #FFFFFF;
+                    color: #132E18;
+                    margin-bottom: 1em !important;
+                }
+            }
+
+            >div:nth-child(2) {
+                line-height: 1.5em;
+                padding-top: 0em !important;
+                color: #132E18;
+                overflow: scroll;
+                height: 45vw;
+                margin: 2em 0 !important;
+                width: 66;
+            }
+
+            >div:last-child {
+                .bluePrint {
+                    text-align: justify;
+                    border-radius: 2em;
+                    background: #E0DAAA;
+                    color: #4F7C5B;
+                    padding: 2em !important;
+                    line-height: 2em;
+                    overflow: scroll;
+                    height: 55vw;
+                    margin-top: 1em;
+
+                    >h3 {
+                        color: #132E18;
+                        font-size: 1.5rem;
+                    }
+                }
+                @include for_media(mobileScreen) {
+                    overflow: hidden;
+                    height: max-content;
+                    }
+            }
+        }
+
+        >div[class="one column row applicationSkills"] {
+            box-shadow: 0px 0px 16.6px 0px #4F7C5B !important;
+            border-radius: 24px !important;
+            background-color: #E0DAAA;
+            margin-bottom: 4em !important;
+            height: 191vw;
+            @include for_media(mobileScreen) {
+                height: max-content;
+                }
+
+            >div {
+                >div {
+                    text-align: center;
+                    border-radius: 2em;
+                    background: #FFFFFF;
+                    color: #132E18;
+                    margin-bottom: 1em !important;
+
+                    >h3 {
+                        padding: 1% !important;
+                    }
+                }
+
+                .horizandalLine {
+                    box-shadow: 0px 0px 8.4px 0px #004131 inset;
+                    height: 0.5em;
+                    box-shadow: 0px 0px 8.4px 0px #004131 inset;
+                    // transform: rotate(90deg);
+                    position: relative;
+                    left: 1em;
+                    width: 90%;
+                    top: 2em;
+                }
+
+                >img {
+                    width: 82% !important;
+                }
+
+                .horizandalLine {
+                    box-shadow: 0px 0px 8.4px 0px #004131 inset;
+                }
+            }
+
+            >div:nth-child(2) {
+                line-height: 1.5em;
+                margin: 2em 0 !important;
+                color: #132E18;
+                overflow: scroll;
+                height: 45vw;
+                margin: 2em 0 !important;
+            }
+
+            >div:last-child {
+                .bluePrint {
+                    text-align: justify;
+                    border-radius: 2em;
+                    background: #FFFFFF;
+                    color: #4F7C5B;
+                    padding: 2em !important;
+                    line-height: 2.5em;
+                    height: 55vw;
+                    margin-top: 1em;
+                    overflow: scroll;
+
+
+                    >h3 {
+                        color: #132E18;
+                    }
+                }
+                @include for_media(mobileScreen) {
+                    overflow: hidden;
+                    height: fit-content;
+                    }
+            }
+        }
+
+        >div[class="one column row nicheSkills"] {
+            box-shadow: 0px 0px 16.6px 0px #4F7C5B !important;
+            border-radius: 24px !important;
+            background-color: #689C76;
+            margin-bottom: 4em !important;
+            display: flex !important;
+            flex-direction: row;
+            height: 149vw !important;
+            @include for_media(mobileScreen) {
+            
+                height: 170vw;
+                }
+
+            >div {
+                >div {
+                    text-align: center;
+                    border-radius: 2em;
+                    background: #08150E;
+                    color: #E0DAAA;
+                    margin-bottom: 1em !important;
+
+                    >h3 {
+                        padding: 1% !important;
+                    }
+                }
+
+                .horizandalLine {
+                    box-shadow: 0px 0px 8.4px 0px #004131 inset;
+                    background: none;
+                    height: 0.5em;
+                    box-shadow: 0px 0px 8.4px 0px #004131 inset;
+                    position: relative;
+                    left: 1em;
+                    width: 90%;
+                    top: 2em;
+                }
+            }
+
+            >div:nth-child(2) {
+                line-height: 1.5em;
+                // padding-top: 2em !important;
+                color: #132E18;
+                overflow: scroll;
+                height: 45vw;
+                margin: 2em 0 !important;
+                // margin-top: 1em;
+            }
+
+            >div:last-child {
+                .bluePrint {
+                    text-align: justify;
+                    border-radius: 2em;
+                    background: #08150E;
+                    color: #FFFFFF;
+                    padding: 2em !important;
+                    overflow: scroll;
+                    line-height: 2.5em;
+                    height: 55vw;
+
+                    >h3 {
+                        color: #E0DAAA;
+                    }
+                }
+                @include for_media(mobileScreen) {
+                    overflow: hidden;
+                    height: fit-content;
+                    padding-bottom: 9rem;
+                    }
+            }
+        }
+
+    }
+}

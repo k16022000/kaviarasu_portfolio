@@ -1,0 +1,103 @@
+@import 'assets/scss/main.scss';
+
+.engageModelDetails {
+    >div:first-child {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+
+        @include for_media(mobileScreen) {
+            width: 90%;
+        }
+    }
+
+    >p {
+        text-align: justify;
+        padding: 0 8em;
+        color: #4F7C5B;
+        margin-top: 2rem;
+
+        @include for_media(mobileScreen) {
+            width: 80%;
+            padding: 0 !important;
+            margin-left: 10%;
+        }
+    
+    }
+
+    .platformDetails {
+        margin: 3em 8em 0 !important;
+
+        @include for_media(mobileScreen) {
+            margin: 3rem 3rem 0rem 3rem !important;
+        }
+
+        >div {
+            >div {
+                >div {
+                    padding: 1rem;
+
+                    >img {
+                        height: 3vw;
+                        width: auto;
+                        margin-bottom: 2rem;
+
+                        @include for_media(mobileScreen) {
+                            height: 3%;
+                        }
+                    }
+
+                    .engageModelHeader {
+                        color: white;
+                        background-color: #689c76;
+                    }
+
+                    >span {
+                        font-weight: 700;
+                        padding: .7rem 1.5rem;
+                        border-radius: 2rem;
+                        margin-bottom: 2rem;
+
+                        @include for_media(mobileScreen) {
+                            text-align: center;
+                        }
+                    }
+
+                    >p {
+                        text-align: justify;
+                        color: #4F7C5B;
+                    }
+
+                    >div {
+                        >div {
+                            font-weight: 700;
+                        }
+
+                        >p {
+                            color: #4F7C5B;
+                            margin-bottom: 1.5rem;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// .workheader {
+//     text-align: center;
+//     font-size: 4.768rem;
+//     color: #4F7C5B;
+//     padding-top: 15px;
+
+//     @include for_media(largeScreen) {
+//         font-size: 3.576rem;
+//     }
+
+//     @include for_media(mobileScreen) {
+//         font-size: 2rem;
+//     }
+// }
+// }

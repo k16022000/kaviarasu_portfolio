@@ -1,0 +1,279 @@
+@import 'assets/scss/main.scss';
+
+.showTrackCategory {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  // background-image: url("../../../assets/images/7130503.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: 'Lato';
+  width: 100%;
+  padding-bottom: 2em;
+
+  div[class="ui card"] {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    // cursor: pointer;
+
+    img {
+      border-radius: none !important;
+    }
+  }
+
+  >div:first-child {
+    padding: 3em 9.8em 0;
+    display: flex;
+    justify-content: space-between;
+
+    @include for_media(mobileScreen) {
+      padding: 2em 3em 0;
+      display: block;
+    }
+
+    @include for_media(mobileScreen) {
+      >div:last-child {
+        width: 100%;
+        display: flex !important;
+        justify-content: flex-end !important;
+      }
+    }
+
+    >h1 {
+      color: #cedb99;
+
+      @include for_media(mobileScreen) {
+        font-size: 1.5rem;
+      }
+    }
+
+    >div:last-child {
+      margin: 0 1em auto;
+      display: flex;
+      gap: 2em;
+      align-items: center;
+
+      @include for_media(mobileScreen) {
+        justify-content: space-between;
+      }
+
+      >div:first-child {
+        cursor: pointer;
+        display: flex;
+
+        @include for_media(mobileScreen) {
+          font-size: 1em;
+        }
+      }
+
+      >div:last-child {
+        >input {
+          border-radius: 35px;
+          padding-right: 1.671em !important;
+        }
+      }
+    }
+  }
+
+  .visibleCards {
+    @include for_media(mobileScreen) {
+      margin-top: 1rem;
+    }
+
+    >div {
+      >div[class="slick-list"] {
+        margin: 0 10em;
+
+        @include for_media(mobileScreen) {
+          margin: 0 2em !important;
+        }
+      }
+
+      .customPrevArrow,
+      .customNextArrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 24px;
+        color: #705391 !important;
+
+        @include for_media(mobileScreen) {
+          font-size: 1.5rem;
+        }
+      }
+
+      .customPrevArrow {
+        left: 40px;
+
+        @include for_media(mobileScreen) {
+          left: -12px !important;
+        }
+      }
+
+      .customNextArrow {
+        right: 40px;
+
+        @include for_media(mobileScreen) {
+          right: -15px !important;
+        }
+      }
+
+      .prevArrow,
+      .nextArrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 24px;
+        color: #705391 !important;
+
+        @include for_media(mobileScreen) {
+          font-size: 1.5rem;
+          color: #705391 !important;
+        }
+      }
+
+      .prevArrow {
+        left: 40px;
+
+        @include for_media(mobileScreen) {
+          left: -12px !important;
+        }
+      }
+
+      .nextArrow {
+        right: 40px;
+
+        @include for_media(mobileScreen) {
+          right: -15px !important;
+        }
+      }
+
+      // .slick-prev,
+      // .slick-next {
+      //   display: none !important;
+      // }
+
+      >button[class="slick-arrow slick-prev"] {
+        left: 100px;
+      }
+
+      >button[class="slick-arrow slick-next"] {
+        right: 100px;
+      }
+
+      .courseSlider {
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem;
+        font-family: sans-serif;
+
+        >div[class="ui card"] {
+          box-shadow: none !important;
+
+          @include for_media(mobileScreen) {
+            >img {
+              height: 20vh !important;
+            }
+          }
+
+          >div[class="content"] {
+
+            >div {
+              font-size: 1.2em !important;
+              display: flex;
+              align-items: center;
+
+              @include for_media(mobileScreen) {
+                font-size: 1em !important;
+              }
+            }
+          }
+        }
+      }
+
+      >ul {
+        bottom: auto;
+
+        >li[class="slick-active"] {
+          >div {
+            background-color: #b3bb92;
+            width: 30px;
+            height: 30px;
+            color: black;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            cursor: pointer;
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+
+    @include for_media(mobileScreen) {
+      ul[class="slick-dots"] {
+        display: flex !important;
+        align-items: baseline;
+        justify-content: center;
+        gap: 2rem;
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .viewAll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // margin: 4em 4em 0 4em;
+
+    >button {
+      display: block;
+      border-radius: 2em;
+      color: #fff !important;
+      background: #705391 !important;
+    }
+  }
+
+  .viewAllBtnMobileView {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    >div:first-child {
+      margin: 0 2rem 1rem 3rem;
+
+      >button {
+        font-size: 0.8rem;
+        background: transparent;
+        border: 1px solid #fff;
+        border-radius: 25px;
+        color: #fff;
+        cursor: pointer;
+        float: right;
+        padding: .3em 1em;
+      }
+    }
+
+    >div:last-child {
+      display: flex;
+      justify-content: center;
+
+      >button {
+        background: #705391 !important;
+        border-radius: 2em;
+      }
+    }
+  }
+
+  >button {
+    border-radius: 2em !important;
+    margin: 0em 4em 0 !important;
+    font-size: 0.8rem !important;
+  }
+}

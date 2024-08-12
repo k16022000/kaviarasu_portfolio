@@ -11,8 +11,11 @@ import "react-phone-input-2/lib/style.css";
 import DefaultLoader from "globals/components/loader/DefaultLoader";
 import useSaveScrollPosition from "globals/utils/useSaveScrollPosition";
 import './assets/scss/common.scss';
+import NewFooter from "globals/components/NewFooter";
 
 const HomeScreen = lazy(() => import("./screens/home/HomeScreen"));
+const About =lazy(()=>import("./screens/AboutSection/About"));
+const Skills = lazy(() => import("./screens/Skills/Skills"));
 
 function App() {
   useConstructor(() => {
@@ -49,12 +52,15 @@ function App() {
     <Suspense fallback={<DefaultLoader />}>
       <div className={styles.App}>
         <div
-          // className={!isHeaderFooterRequired ? styles.right : styles.left}
+          className={!isHeaderFooterRequired ? styles.right : styles.left}
           ref={ref}
         >
           <Switch>
+            <Route path="/about" component={About} />
+            <Route path="/skills" component={Skills} />
             <Route path="/" component={HomeScreen} />
           </Switch>
+          {isHeaderFooterRequired && <NewFooter />}
         </div>
       </div>
     </Suspense>

@@ -1,0 +1,57 @@
+@import "assets/scss/main.scss";
+
+// .ContactForDemo {
+//   display: flex;
+//   gap: 1rem;
+
+//   > div {
+//     width: 50px;
+//     aspect-ratio: 1;
+//     border-radius: 0.5rem;
+//     cursor: pointer;
+//     background-color: #43117c;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+
+//     >img {
+//       width: 23px;
+//       aspect-ratio: 1;
+//     }
+//   }
+// }
+
+// ContactForDemo.module.scss
+
+$primary-color: #705391;
+$icon-color: #fff;
+$icon-bg-color: #705391;
+$icon-hover-bg-color: lighten($icon-bg-color, 10%);
+$icon-size: 40px;
+
+.ContactForDemo {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  div {
+    width: $icon-size;
+    height: $icon-size;
+    background-color: $icon-bg-color;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $icon-hover-bg-color;
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+      color: $icon-color;
+    }
+  }
+}

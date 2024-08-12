@@ -1,0 +1,104 @@
+@import "assets/scss/main.scss";
+
+.heroSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #f7f7f7;
+  // background-color: #F3EDF9;
+
+  &ContentBox {
+    max-width: 50%;
+  }
+
+  &Content {
+    margin-bottom: 20px;
+
+    .sectionTitle {
+      font-size: 18px;
+      font-weight: 400;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .heroSectionTitle {
+      font-size: 48px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 20px;
+      line-height: 1.2;
+
+      .heroSectionTitleColor {
+        color: #705391;
+      }
+    }
+
+    .heroSectionDescription {
+      font-size: 16px;
+      font-weight: 300;
+      color: #555;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+  }
+
+  .btnBtnPrimary {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #705391;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #593e7c;
+    }
+  }
+
+  .heroSectionImg {
+    width: 50%;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .heroImage {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      animation: float 4s ease-in-out infinite;
+
+      &:hover {
+        animation: pulse 1.5s ease-in-out infinite;
+      }
+    }
+
+    // @keyframes float {
+
+    //   0%,
+    //   100% {
+    //     transform: translateY(0);
+    //   }
+
+    //   50% {
+    //     transform: translateY(-10px);
+    //   }
+    // }
+
+    // @keyframes pulse {
+
+    //   0%,
+    //   100% {
+    //     transform: scale(1);
+    //   }
+
+    //   50% {
+    //     transform: scale(1.05);
+    //   }
+    // }
+  }
+
+}

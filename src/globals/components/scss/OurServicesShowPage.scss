@@ -1,0 +1,844 @@
+@import "assets/scss/main.scss";
+
+.servicesShowPage {
+  >div:first-child {
+    margin: 7em 7em 0 7em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    @include for_media(mobileScreen) {
+      margin: 4em 2em 0 2em;
+    }
+
+    >div:first-child {
+      display: flex;
+      justify-content: center;
+      font-weight: 700;
+    }
+
+    >div:nth-child(2) {
+      font-weight: 700;
+      color: #132E18;
+      text-align: center;
+      margin: 0 15vw;
+
+      @include for_media(mobileScreen) {
+        margin: 0;
+        padding: 1rem;
+      }
+    }
+
+    >div:last-child {
+      // font-weight: 600;
+      color: #4F7C5B;
+      text-align: justify;
+    }
+  }
+
+  .servicesEmbed {
+    margin: 3em 7em 3em 7em;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+
+    @include for_media(mobileScreen) {
+      margin: 3em 0 0 0em;
+      position: relative;
+    }
+
+    >div:nth-child(2) {
+      padding: 0 !important;
+
+      >img {
+        border-radius: 2em;
+      }
+
+      @include for_media(mobileScreen) {
+        padding: 0 !important;
+      }
+    }
+  }
+
+  .whatWeDo {
+    margin: 4em 7em 0 7em;
+
+    @include for_media(mobileScreen) {
+      margin: 4em 2em 0 2em;
+    }
+
+    >div:first-child {
+      display: flex;
+      justify-content: center;
+    }
+
+    >div:last-child {
+      >div[class="ui grid"] {
+        margin: 2rem 0;
+        border-radius: 1rem;
+        box-shadow: 4px 4px 8px 0px #4F7C5B;
+
+        @include for_media(mobileScreen) {
+          box-shadow: 4px 4px 8px 0px #B3BB92;
+        }
+
+        >div {
+          margin: 1rem 0 !important;
+        }
+
+        >div:first-child {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          @include for_media(mobileScreen) {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            >div {
+              display: flex;
+              gap: 1em;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 2em;
+
+              >div:first-child {
+                >img {
+                  height: 40px !important;
+                }
+              }
+
+              >h3 {
+                color: #08150E;
+                margin-top: 0;
+              }
+            }
+          }
+
+        }
+
+        >div:last-child {
+          >div:first-child {
+            color: #08150E;
+          }
+
+          >div:last-child {
+            text-align: justify;
+            color: #4F7C5B;
+          }
+        }
+      }
+    }
+  }
+
+  .OurServiceFeature {
+    background-image: url("../../../assets/images/featureBG.webp");
+    background-size: cover;
+    height: auto;
+    text-align: center;
+    color: white;
+    margin: 2.7em 7em 2.7em 7em;
+    border-radius: 24px;
+
+    >div:first-child {
+      color: #E0DAAA;
+      padding: 1rem;
+    }
+
+    @include for_media(mobileScreen) {
+      margin: 2.7em 2em 2.7em 2em;
+      border-radius: 10px !important;
+
+      >div:last-child {
+        >div {
+          padding: 0.5rem !important;
+        }
+      }
+    }
+
+    >div:last-child {
+      margin: 0 3.1em 0 3.1em !important;
+
+      @include for_media(mobileScreen) {
+        margin: 0 !important;
+      }
+
+      >div {
+        display: flex !important;
+        justify-content: center !important;
+        margin: 1px 0 30px 0 !important;
+        padding-right: 0.8em;
+        padding-left: 0.8em;
+
+        @include for_media(mobileScreen) {
+          margin: 0 !important;
+        }
+
+        @include for_media(tabletScreen) {
+          margin: 0 !important;
+        }
+      }
+    }
+
+    .OurServiceFeatureCard {
+      border-radius: 1em;
+      box-shadow: 4.331709861755371px 4.331709861755371px 8.663419723510742px 0px #132E18;
+
+      @include for_media(mobileScreen) {
+        margin-bottom: 0rem;
+      }
+
+      >div {
+        padding: 1.5em 1em;
+
+        @include for_media(mobileScreen) {
+          padding: 0.8em 0.5em;
+        }
+
+        @include for_media(tabletScreen) {
+          margin: 0 !important;
+        }
+
+        >img {
+          height: 50px;
+          width: auto;
+          margin-bottom: 1rem;
+
+          @include for_media(mobileScreen) {
+            height: 30px;
+          }
+        }
+
+        >div[class="header"] {
+          height: 50px;
+          color: #132E18;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: var(--font-name) !important;
+
+          @include for_media(mobileScreen) {
+            height: 60px;
+          }
+        }
+
+        >div:last-child {
+          color: #4F7C5B;
+
+          @include for_media(mobileScreen) {
+            height: auto !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.aiReport {
+  margin: 5em 12em 5em 13.5em;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+
+
+  @include for_media(mobileScreen) {
+    margin: 0em 1.5em 2em 1.5em !important;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+
+    .mobileName {
+      border-radius: 5px;
+      box-shadow: 2.400700807571411px 2.400700807571411px 4.801401615142822px 0px #4F7C5B !important;
+      color: #132E18 !important;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+    }
+
+    >div:nth-child(3) {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      align-items: center;
+      margin-top: 2rem;
+    }
+
+    >div {
+      .connectingCircle {
+        width: 1rem;
+        height: 1rem;
+        border: 1px solid #4F7C5B;
+        border-radius: 50%;
+      }
+
+      .circle {
+        width: 1rem;
+        height: 1rem;
+        background-color: #133A1B;
+        border-radius: 50%;
+      }
+
+      .connectingLine {
+        border: 1px solid #4F7C5B;
+        width: 10%;
+      }
+    }
+
+    >div:nth-child(2) {
+      border-radius: 1rem !important;
+      margin-bottom: 0rem !important;
+
+      >button {
+        display: none !important;
+      }
+    }
+  }
+
+  >img {
+    position: absolute !important;
+    bottom: 0;
+    right: -12rem;
+  }
+
+  >div:first-child {
+    width: 50%;
+    border-radius: 10px !important;
+    box-shadow: 3.355869770050049px 3.355869770050049px 6.711739540100098px 0px #4F7C5B,
+      0.5rem 0.5rem #B3BB92,
+      1rem 1rem #E0DAAA;
+
+    @include for_media(mobileScreen) {
+      width: 100%;
+    }
+
+    >button {
+      display: none !important;
+    }
+
+    .aiReportCard {
+      >div {
+        width: 100%;
+
+        >img {
+          width: 100%;
+          border-radius: 10px !important;
+          overflow: hidden;
+        }
+      }
+
+
+    }
+  }
+
+  @include for_media(mobileScreen) {
+    .aiReportImages>img {
+      border-radius: 1rem !important;
+    }
+  }
+
+  >div:nth-child(2) {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 39%;
+    margin-bottom: 10rem;
+    background-color: #FFFFFF;
+    padding: 3.1rem 0rem 3.1rem 5rem;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 3.355869770050049px 3.355869770050049px 6.711739540100098px 0px #4F7C5B;
+
+    @include for_media(mobileScreen) {
+      width: 100%;
+      padding: 0em 0em;
+      box-shadow: none;
+      padding-top: 0em;
+      padding-bottom: 0em;
+      box-shadow: 3.355869770050049px 3.355869770050049px 6.711739540100098px 0px #4F7C5B,
+        0.5rem 0.5rem #B3BB92,
+        1rem 1rem #E0DAAA;
+      height: 50%;
+    }
+
+    >div:first-child {
+      color: #132E18;
+      line-height: 55px;
+
+
+      >div {
+        font-weight: 700;
+      }
+    }
+
+    >div:last-child {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .connectingCircle {
+        width: 1rem;
+        height: 1rem;
+        border: 1px solid #4F7C5B;
+        border-radius: 50%;
+      }
+
+      .circle {
+        width: 1rem;
+        height: 1rem;
+        background-color: #133A1B;
+        border-radius: 50%;
+      }
+
+      .connectingLine {
+        border: 1px solid #4F7C5B;
+        width: 10%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .aiReport {
+    margin: 3em 6em 3em 7.5em;
+
+    .reportType {
+      padding: 0rem 3rem 1rem 3rem !important;
+      margin-bottom: 0 !important;
+      width: 52% !important;
+    }
+  }
+}
+
+
+.ProficiencyReport {
+  margin: 5em 12em 5em 17.5em;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  @media screen and (max-width: 992px) {
+    margin: 3em 6em 0em 7.5em;
+
+    .reportType {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  @include for_media(mobileScreen) {
+    margin: 5em 1.5em 5em 1.5em !important;
+    margin-top: 0 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    position: relative;
+
+    >div {
+      margin-bottom: 0rem !important;
+      padding: 0rem 0rem 0rem 0rem !important;
+    }
+
+    .mobileName {
+      padding: 1rem 2rem !important;
+      box-shadow: 2.400700807571411px 2.400700807571411px 4.801401615142822px 0px #4F7C5B !important;
+      color: #132E18 !important;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      width: 100% !important;
+    }
+
+    >div:nth-child(3) {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      bottom: -3rem;
+
+      .connectingCircle {
+        width: 1rem;
+        height: 1rem;
+        border: 1px solid #4F7C5B;
+        border-radius: 50%;
+      }
+
+      .circle {
+        width: 1rem;
+        height: 1rem;
+        background-color: #133A1B;
+        border-radius: 50%;
+      }
+
+      .connectingLine {
+        border: 1px solid #4F7C5B;
+        width: 10%;
+      }
+    }
+  }
+
+  >img {
+    position: absolute !important;
+    margin-top: 20rem;
+    margin-left: -18rem;
+  }
+
+
+  >div:nth-child(2) {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 39%;
+    margin-bottom: 19rem;
+    background-color: #FFFFFF;
+    padding: 3.1rem 0rem 3.1rem 5rem;
+    border-radius: 10px 0 0 10px !important;
+    box-shadow: -3.355869770050049px 3.355869770050049px 6.711739540100098px 0px #4F7C5B;
+
+    @include for_media(mobileScreen) {
+      border-radius: 1rem !important;
+      flex-direction: initial;
+    }
+
+
+    >div:first-child {
+      color: #132E18;
+      line-height: 55px;
+
+      @media screen and (max-width: 992px) {
+        line-height: 3rem !important;
+      }
+
+      >div {
+        font-weight: 700;
+      }
+    }
+
+    >div:last-child {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .connectingCircle {
+        width: 1rem;
+        height: 1rem;
+        border: 1px solid #4F7C5B;
+        border-radius: 50%;
+      }
+
+      .circle {
+        width: 1rem;
+        height: 1rem;
+        background-color: #133A1B;
+        border-radius: 50%;
+      }
+
+      .connectingLine {
+        border: 1px solid #4F7C5B;
+        width: 10%;
+      }
+    }
+  }
+
+  >div:last-child {
+    width: 50%;
+    border-radius: 10px !important;
+    box-shadow: 3.355869770050049px 3.355869770050049px 6.711739540100098px 0px #4F7C5B,
+      0.5rem -0.5rem #B3BB92,
+      1rem -1rem #E0DAAA;
+
+    @include for_media(mobileScreen) {
+      width: 100%;
+    }
+
+
+    >button {
+      display: none !important;
+    }
+
+    .aiReportCard {
+      >div {
+        width: 100%;
+
+        >img {
+          width: 100%;
+          border-radius: 10px !important;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+@include for_media(bigTabletScreen) {
+  .ProficiencyReport {
+    .proficiencyReportBlisteningImage {
+      width: 90% !important;
+    }
+
+    .reportType {
+      width: 60% !important;
+
+      >div:first-child {
+        margin-right: 2em;
+      }
+    }
+  }
+}
+
+.scalabilityReport {
+  margin: 5em 2em 5em 2em;
+  display: flex;
+  align-items: center;
+
+  @include for_media(mobileScreen) {
+    margin: 2em 1.5em 5em 1.5em;
+    display: block;
+
+    .mobileName {
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      box-shadow: 2.400700807571411px 2.400700807571411px 4.801401615142822px 0px #4F7C5B !important;
+      color: #132E18 !important;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      width: 100% !important;
+    }
+
+    >div:nth-child(2) {
+      width: 100% !important;
+      box-shadow: 3.3558697701px 3.3558697701px 6.7117395401px 0px #4F7C5B, 0.5rem 0.5rem #B3BB92, 1rem 1rem #E0DAAA !important;
+      border-radius: 10px 10px 10px 10px !important;
+      margin-top: 2em;
+
+      >div {
+        >div {
+          >div {
+            >div {
+              >div[class="aiReportCard"] {
+                >div {
+                  >img {
+                    border-radius: 0.8rem !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    >div:last-child {
+      padding: 0 !important;
+    }
+  }
+
+  >div:first-child {
+    width: 50%;
+    border-radius: 10px !important;
+    box-shadow: 3.355869770050049px 3.355869770050049px 6.711739540100098px 0px #4F7C5B,
+      0.5rem 0.5rem #B3BB92,
+      1rem 1rem #E0DAAA;
+
+    >button {
+      display: none !important;
+    }
+
+    .aiReportCard {
+      >div {
+        width: 100%;
+
+        >img {
+          width: 100%;
+          border-radius: 10px !important;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+  >div:last-child {
+    margin-bottom: 1rem;
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 3.355869770050049px 3.355869770050049px 6.711739540100098px 0px #4F7C5B;
+
+    @media screen and (max-width: 992px) {
+      padding: 1rem 2rem;
+    }
+
+    >div:first-child {
+      color: #132E18;
+      line-height: 55px;
+
+      @media screen and (max-width: 992px) {
+        line-height: 3rem !important;
+      }
+
+      >div {
+        font-weight: 700;
+      }
+    }
+
+    >div:last-child {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .connectingCircle {
+        width: 1rem;
+        height: 1rem;
+        border: 1px solid #4F7C5B;
+        border-radius: 50%;
+      }
+
+      .circle {
+        width: 1rem;
+        height: 1rem;
+        background-color: #133A1B;
+        border-radius: 50%;
+      }
+
+      .connectingLine {
+        border: 1px solid #4F7C5B;
+        width: 10%;
+      }
+    }
+  }
+}
+
+.crownAssessmentReports {
+  margin: 5em 12em 5em 17.5em;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  @include for_media(mobileScreen) {
+    margin: 5em 1.5em 5em 1.5em !important;
+    margin-top: 0 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+
+    .mobileName {
+      padding: 1.3rem 2rem !important;
+      box-shadow: 2.400700807571411px 2.400700807571411px 4.801401615142822px 0px #4F7C5B !important;
+      color: #132E18 !important;
+      font-weight: 700;
+      width: 100% !important;
+    }
+
+    >div:nth-child(2) {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      bottom: -3rem;
+    }
+  }
+
+
+
+  >div:first-child {
+    background-color: #FFFFFF;
+    padding: 2em;
+    border-radius: 10px 0 0 10px !important;
+    box-shadow: -3.355869770050049px 3.355869770050049px 6.711739540100098px 0px #4F7C5B;
+
+    @include for_media(mobileScreen) {
+      border-radius: 1rem !important;
+      flex-direction: initial;
+    }
+
+
+    >div:first-child {
+      color: #132E18;
+      line-height: 55px;
+
+      >div {
+        font-weight: 700;
+      }
+    }
+
+    >div:last-child {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  >div:last-child {
+    width: 50%;
+    border-radius: 10px !important;
+    box-shadow: 3.355869770050049px 3.355869770050049px 6.711739540100098px 0px #4F7C5B,
+      0.5rem -0.5rem #B3BB92,
+      1rem -1rem #E0DAAA;
+
+    @include for_media(mobileScreen) {
+      width: 100%;
+    }
+
+
+    >button {
+      display: none !important;
+    }
+
+    .aiReportCard {
+      >div {
+        width: 100%;
+
+        >img {
+          width: 100%;
+          border-radius: 10px !important;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+@include for_media(bigTabletScreen) {
+  .crownAssessmentReports {
+    margin: 0em 2em 2em 2em;
+
+    // .reportType {
+    //   >div:first-child {
+    //     >div {
+    //       font-size: 2em !important;
+    //     }
+    //   }
+    // }
+  }
+}
+
+.connectingCircle {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #4F7C5B;
+  border-radius: 50%;
+}
+
+.circle {
+  width: 1rem;
+  height: 1rem;
+  background-color: #133A1B;
+  border-radius: 50%;
+}
+
+.connectingLine {
+  border: 1px solid #4F7C5B;
+  width: 10%;
+}
+
+div[class='cardCirle'] {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}

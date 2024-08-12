@@ -1,0 +1,929 @@
+@import "assets/scss/main.scss";
+
+.jobDetailsShowPage {
+  padding: 3rem 5rem 0 5rem;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+
+  .Nodata {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    color: #686868;
+  }
+
+
+  .filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    >div:first-child {
+      display: flex;
+      align-items: baseline;
+      gap: 2rem;
+      width: 100%;
+      color: #8B8B8B;
+
+
+      >div {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .activeTabFilter {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        color: #539165;
+
+        .activeTab {
+          height: 0.25rem;
+          border-radius: 0.25rem;
+          background: #539165;
+        }
+      }
+    }
+
+    >div:last-child {
+      width: 100%;
+      display: flex;
+      justify-content: end;
+
+      >div {
+        width: 60%;
+
+        >input {
+          border-radius: 2rem !important;
+          background: #DDE9E0 !important;
+          border: none;
+          color: #686868 !important;
+          font-weight: 700 !important;
+        }
+
+        >i {
+          color: #686868 !important;
+        }
+      }
+    }
+  }
+
+  .company {
+    padding: 1rem;
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    gap: 1rem;
+    scrollbar-color: #539165 #f1f1f1;
+    overflow-y: auto;
+
+    .companyCards,
+    .inActiveCompanyCards {
+      cursor: pointer;
+      border-radius: 1em;
+      transition: box-shadow 0.3s ease;
+
+      .content {
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+
+        >img {
+          object-fit: contain;
+          width: 5rem;
+          height: 5rem;
+        }
+
+        >div {
+          text-align: center;
+          display: inline-block;
+          width: 150px !important;
+          white-space: nowrap;
+          overflow: hidden !important;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+
+    .companyCards {
+      box-shadow: 0px 0px 4px 0px #00000040 !important;
+
+      .content {
+        color: #539165;
+      }
+
+      &:hover {
+        transition: box-shadow 0.3s ease;
+      }
+    }
+
+    .inActiveCompanyCards {
+      .content {
+        color: #8B8B8B;
+      }
+
+      &:hover {
+        box-shadow: 0px 0px 8px 0px #00000080 !important;
+
+        .content {
+          color: #539165;
+        }
+      }
+    }
+  }
+
+
+  .title {
+    padding: 1rem 0;
+
+    .gridItem {
+      padding: 8px 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      border-radius: 2em;
+      box-shadow: none !important;
+      border: 2px solid #539165 !important;
+      color: #539165 !important;
+      margin: 0.3rem !important;
+      background-color: #fff !important;
+    }
+
+    .gridItem:hover {
+      background-color: #539165 !important;
+      color: #fff !important;
+    }
+
+    .active {
+      background-color: #539165 !important;
+      transition: background-color 0.3s;
+      border-radius: 2em;
+      border: 2px solid #539165 !important;
+      box-shadow: none !important;
+      margin: 0.2rem !important;
+      color: #fff !important;
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+
+    >div:last-child {
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+      margin-top: 1rem;
+
+      >i {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        color: #539165;
+      }
+    }
+  }
+
+
+  .developerDetails {
+    .leftSideContent {
+      height: 190vh;
+      padding: 1rem !important;
+      scrollbar-color: #539165 #f1f1f1;
+      overflow-y: auto;
+      scrollbar-width: auto;
+
+      &::-webkit-scrollbar {
+        width: 50px !important;
+      }
+
+
+      .developerCards {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        cursor: pointer;
+        padding-right: 1rem;
+
+        >div {
+          border-radius: 1em;
+          box-shadow: 0px 0px 4px 0px #00000040 !important;
+          transition: box-shadow 0.3s ease;
+          padding: 1rem;
+          width: 100% !important;
+          background-color: #F6F6F6;
+
+          .content {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+
+            >img {
+              border-radius: 1rem;
+              object-fit: contain;
+              // width: 10vw;
+              // height: 12vh;
+              width: 5.25rem;
+              height: 5.25rem;
+            }
+
+            >div:last-child {
+              display: flex;
+              flex-direction: column;
+
+              >div:first-child {
+                padding: 1rem 0;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+
+                >div:first-child {
+                  color: #539165;
+                }
+
+                >div:nth-child(2) {
+                  color: #2A4933;
+                  font-weight: 600;
+                }
+
+                >div:last-child {
+                  color: #686868;
+                  font-weight: 400;
+                }
+              }
+
+              >div:last-child {
+                display: flex;
+                gap: 2rem;
+                color: #686868;
+
+                >div {
+                  display: flex;
+                  gap: 0.5rem;
+                  align-items: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .rightSideContent {
+      >div {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .developerDetailsRight {
+          border-radius: 1em;
+          box-shadow: 0px 0px 4px 0px #00000040 !important;
+          transition: box-shadow 0.3s ease;
+          padding: 1rem;
+          width: 100% !important;
+
+          >div:first-child {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            >div:first-child {
+              display: flex;
+              flex-direction: column;
+              gap: 1rem;
+
+              >div:first-child {
+                color: #539165;
+                font-weight: 700;
+              }
+
+              >div:last-child {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+
+                >span:first-child {
+                  color: #686868;
+                  font-weight: 700;
+                }
+
+                >span:last-child {
+                  color: #8B8B8B;
+                }
+              }
+            }
+
+            >img {
+              border-radius: 1rem;
+              object-fit: contain;
+              // width: 10vw;
+              // height: 12vh;
+              width: 4.938rem;
+              height: 4.938rem;
+            }
+          }
+
+          >div:last-child {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            >div {
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+
+              >span {
+                color: #8B8B8B;
+              }
+            }
+          }
+        }
+
+        .aboutTheCompany {
+          border-radius: 1em;
+          box-shadow: 0px 0px 4px 0px #00000040 !important;
+          transition: box-shadow 0.3s ease;
+          padding: 1rem;
+          width: 100% !important;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+
+          >div:first-child {
+            color: #686868;
+          }
+
+          >div:nth-child(2) {
+            // height: 40vh;
+            // overflow-y: auto;
+            text-align: justify;
+            color: #8B8B8B;
+            padding-right: 1rem;
+          }
+
+          >div:nth-child(3) {
+            color: #8B8B8B;
+            padding-right: 1rem;
+            font-weight: 400;
+          }
+
+          >div:last-child {
+            display: flex;
+            justify-content: end;
+
+            >button {
+              padding: 1rem 2rem;
+              background-color: #539165;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.resumeUpload {
+  min-height: 20vh;
+
+  .errorMessage {
+    display: flex;
+    flex-direction: column;
+
+    >div:first-child {
+      display: flex;
+      justify-content: end;
+      cursor: pointer;
+
+      >i {
+        color: #4F4F4F;
+        padding: 1rem;
+        background-color: #E5E5E5;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    >div:last-child {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      color: red;
+      margin: 1rem;
+
+      >button {
+        background-color: #539165 !important;
+        border-radius: 2px;
+        color: #fff !important;
+      }
+    }
+  }
+
+  .headerContent {
+    text-align: center;
+  }
+}
+
+.editSuccessModel {
+  width: 29.063rem !important;
+
+  .validResume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    >div:first-child {
+      width: 100%;
+      display: flex;
+      justify-content: end;
+      cursor: pointer;
+
+      >i {
+        color: #4F4F4F;
+        padding: 1rem;
+        background-color: #E5E5E5;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    >div:nth-child(2) {
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+      align-items: center;
+
+      >i {
+        color: #539165;
+        box-shadow: none;
+      }
+
+      >div:last-child {
+        color: #54595E;
+      }
+    }
+
+    >div:last-child {
+      width: 100%;
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+
+      >button {
+        border-radius: 0.5rem;
+      }
+
+      >button:first-child {
+        background-color: #539165 !important;
+        color: #fff !important;
+      }
+
+      >button:last-child {
+        border: 2px solid #539165;
+        box-shadow: none !important;
+        color: #539165 !important;
+      }
+    }
+  }
+}
+
+
+.editresumedetails {
+  .mobfield {
+    >div[class="react-datepicker__tab-loop"] {
+      >div[class="react-datepicker-popper"] {
+        >div [class="react-datepicker"] {
+          >div[class="react-datepicker__month-container"] {
+            >div:first-child>h2 {
+              font-size: var(--font-size-body-m) !important;
+            }
+          }
+        }
+      }
+    }
+
+    @include for_media(mobileScreen) {
+      margin-bottom: 1rem !important;
+    }
+  }
+
+  .submitfrom {
+    display: flex;
+    justify-content: end;
+
+    .blogformsubmit {
+      background-color: #539165 !important;
+      color: #fff;
+    }
+  }
+}
+
+
+
+
+.mobileViewJobDetailsShowPage {
+
+  .Nodata {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    color: #686868;
+  }
+
+  >div:first-child {
+    margin: 1rem 1rem 25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .JobDetailsInput {
+      height: 4em;
+
+      >input {
+        border-radius: 2rem !important;
+        font-weight: 400;
+        color: #686868;
+        font-size: 20px !important;
+        border: none;
+      }
+
+      >i {
+        padding-right: 6rem;
+        font-size: 1.5em;
+        color: #686868;
+      }
+    }
+
+    .MobileViewDeveloperCards {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .workflowCard {
+        border-radius: 1em;
+        box-shadow: 0px 0px 4px 0px #00000040 !important;
+        transition: box-shadow 0.3s ease;
+        padding: 1rem;
+        width: 100% !important;
+        background-color: #F6F6F6;
+        cursor: pointer;
+
+        .content {
+          display: flex;
+          align-items: flex-start;
+          gap: 2rem;
+
+          >img {
+            border-radius: 1rem;
+            object-fit: contain;
+            width: 5.25rem;
+            height: 5.25rem;
+          }
+
+          >div:last-child {
+            display: flex;
+            flex-direction: column;
+
+            >div:first-child {
+              padding: 0rem 0 1rem 0;
+              display: flex;
+              flex-direction: column;
+              gap: 0.5rem;
+
+              >div:first-child {
+                color: #539165;
+                font-weight: 600;
+              }
+
+              >div:nth-child(2) {
+                color: #2A4933;
+                font-weight: 700;
+              }
+
+              >div:last-child {
+                color: #686868;
+                font-weight: 400;
+              }
+            }
+
+            >div:last-child {
+              display: flex;
+              gap: 2rem;
+              color: #686868;
+
+              >div {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+
+
+
+
+      .mobileViewDeveloperDetails {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .developerDetailsRight {
+          border-radius: 1em;
+          box-shadow: 0px 0px 4px 0px #00000040 !important;
+          transition: box-shadow 0.3s ease;
+          padding: 1rem;
+          width: 100% !important;
+          cursor: pointer;
+
+          >div:first-child {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            >div:first-child {
+              display: flex;
+              flex-direction: column;
+              gap: 1rem;
+
+              >div:first-child {
+                color: #539165;
+                font-weight: 700;
+              }
+
+              >div:last-child {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+
+                >span:first-child {
+                  color: #686868;
+                  font-weight: 700;
+                }
+
+                >span:last-child {
+                  color: #8B8B8B;
+                  font-weight: 400;
+                }
+              }
+            }
+
+            >img {
+              border-radius: 1rem;
+              object-fit: contain;
+              width: 4.938rem;
+              height: 4.938rem;
+            }
+          }
+
+
+          >div:last-child {
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            >div {
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+
+              >span {
+                color: #8B8B8B;
+              }
+            }
+          }
+        }
+
+        .aboutTheCompany {
+          border-radius: 1em;
+          box-shadow: 0px 0px 4px 0px #00000040 !important;
+          transition: box-shadow 0.3s ease;
+          padding: 1rem;
+          width: 100% !important;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+
+          >div:first-child {
+            color: #686868;
+            font-weight: 700;
+          }
+
+          >div:nth-child(2) {
+            text-align: justify;
+            color: #8B8B8B;
+          }
+
+          >div:nth-child(3) {
+            color: #8B8B8B;
+            font-weight: 400;
+          }
+
+          >div:last-child {
+            width: 100%;
+            display: flex;
+            justify-content: end;
+
+            >button {
+              // padding: 1rem 2rem;
+              background-color: #539165;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mobileFooter {
+    .footerNavBar {
+      position: fixed;
+      bottom: 0;
+      z-index: 999;
+      width: 100%;
+      background-color: #fff;
+      display: flex;
+      justify-content: space-evenly;
+      box-shadow: 3px 3px 16px #686868;
+      background-color: #DDE9E0;
+
+      >div {
+        padding: 5px 10px;
+      }
+
+      >div:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        color: #8B8B8B;
+
+        >i {
+          cursor: pointer;
+        }
+
+        >div {
+          cursor: pointer;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          padding: 15px 0;
+        }
+
+        .activeTabFilter {
+          cursor: pointer;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          color: #539165;
+          margin-bottom: -0.75rem;
+
+          .activeTab {
+            height: 0.25rem;
+            border-radius: 0.25rem;
+            background: #539165;
+          }
+        }
+      }
+    }
+
+    .navOptions {
+      width: 100%;
+      position: fixed;
+      bottom: 51px;
+      margin: 0;
+      background-color: #fff;
+      z-index: 888;
+      box-shadow: 2px 2px 25px #686868;
+
+      .MobileViewCompany {
+        padding: 1rem;
+        display: flex;
+        align-items: baseline;
+        flex-direction: row;
+        gap: 1rem;
+        scrollbar-color: #539165 #f1f1f1;
+        overflow-x: auto;
+
+        .companyCards,
+        .inActiveCompanyCards {
+          cursor: pointer;
+          border-radius: 1em;
+          margin-bottom: 1rem;
+          transition: box-shadow 0.3s ease;
+
+          .content {
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 1rem;
+            width: 25vw;
+    
+            >img {
+              object-fit: contain;
+              aspect-ratio: 1;
+              width: 100%;
+            }
+    
+            >div {
+              text-align: center;
+              display: inline-block;
+              white-space: wrap;
+            }
+          }
+        }
+
+        .companyCards {
+          box-shadow: 0px 0px 4px 0px #00000040 !important;
+
+          .content {
+            color: #539165;
+          }
+
+          &:hover {
+            transition: box-shadow 0.3s ease;
+          }
+        }
+
+        .inActiveCompanyCards {
+          .content {
+            color: #8B8B8B;
+          }
+
+          &:hover {
+            box-shadow: 0px 0px 8px 0px #00000080 !important;
+
+            .content {
+              color: #539165;
+            }
+          }
+        }
+      }
+
+
+      .MobileViewTitle {
+        padding: 2rem 0;
+        overflow-x: auto;
+
+        .gridItem {
+          padding: 8px 16px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+          border-radius: 2em;
+          box-shadow: none !important;
+          border: 2px solid #539165 !important;
+          color: #539165 !important;
+          margin: 0.3rem !important;
+          background-color: #fff !important;
+          font-family: var(--font-name) !important;
+        }
+
+        .gridItem:hover {
+          background-color: #539165 !important;
+          color: #fff !important;
+        }
+
+        .active {
+          background-color: #539165 !important;
+          transition: background-color 0.3s;
+          border-radius: 2em;
+          border: 2px solid #539165 !important;
+          box-shadow: none !important;
+          margin: 0.2rem !important;
+          color: #fff !important;
+          padding: 8px 16px;
+          cursor: pointer;
+          font-family: var(--font-name) !important;
+        }
+
+        >div:last-child {
+          display: flex;
+          justify-content: center;
+          cursor: pointer;
+          margin-top: 1rem;
+
+          >i {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            color: #539165;
+          }
+        }
+      }
+    }
+  }
+}

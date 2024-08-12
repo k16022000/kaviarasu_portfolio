@@ -1,10 +1,13 @@
 import React from 'react'
+import Header from 'globals/components/Header';
+import HeroSection from 'screens/HeroSection';
 
 function HomeScreen() {
   return (
-    <div>
-      <h1>Kaviarasu N</h1>
-    </div>
+    <>
+      <Header />
+      <HeroSection />
+    </>
   )
 }
 

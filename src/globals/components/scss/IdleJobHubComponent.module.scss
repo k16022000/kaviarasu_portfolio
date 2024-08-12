@@ -1,0 +1,554 @@
+@import "assets/scss/main.scss";
+
+.IdleJobHubComponent {
+  background-image: url("../../../assets/images/reclyticsFeature/idlejobbgi.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .idjobhubheader {
+    color: white !important;
+    text-align: center;
+    margin-bottom: 0% !important;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    font-weight: 700 !important;
+  }
+
+  .IdleJobHubComponentdiv {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  .idjobhubsubheader {
+    color: #e4deae !important;
+    text-align: center;
+    margin-top: 0% !important;
+    font-weight: 400 !important;
+  }
+
+  .jobcardsdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .explorebtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .expbtn {
+    background-color: #689c76 !important;
+    color: white !important;
+    padding: 2rem 4rem !important;
+    border-radius: 2.5rem !important;
+
+    @include for_media(mobileScreen) {
+      margin-top: 3rem !important;
+      padding: 1rem !important;
+    }
+
+    @include for_media(bigTabletScreen) {
+      margin-top: 3rem !important;
+      padding: 1rem !important;
+    }
+  }
+
+  .jobdetailsshowcard {
+    background-color: #f3f3f3;
+    padding: 2rem;
+    // cursor: pointer;
+    // padding-top: 2rem;
+    // padding-bottom: 2rem;
+    // padding-left: 2rem;
+    // padding-right: 9rem;
+    border-radius: 0.5rem;
+
+    // min-width: 30rem;
+    @include for_media(mobileScreen) {
+      padding: 1rem;
+    }
+
+    @include for_media(bigTabletScreen) {
+      padding: 1rem;
+    }
+  }
+
+  .jobheader {
+    color: #689c76;
+    margin-bottom: 0% !important;
+    font-weight: 700 !important;
+  }
+
+  .jobsubheader {
+    color: #132e18;
+    margin-top: 0.2em !important;
+    margin-bottom: 0.2em !important;
+    font-weight: 700 !important;
+
+    @include for_media(mobileScreen) {
+      margin-top: 0.5em !important;
+    }
+
+    @include for_media(bigTabletScreen) {
+      margin-top: 0.5em !important;
+    }
+  }
+
+  .joblocation {
+    color: #696969 !important;
+    font-weight: 400 !important;
+
+    @include for_media(mobileScreen) {
+      margin-top: 0.5em;
+    }
+
+    @include for_media(bigTabletScreen) {
+      margin-top: 0.5em;
+    }
+  }
+
+  .jobdetailscontent {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .jobcards {
+    padding: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 4rem;
+
+    @include for_media(bigTabletScreen) {
+      display: flex !important;
+      flex-direction: column;
+    }
+
+    .idleImage {
+      @include for_media(mobileScreen) {
+        width: auto !important;
+        height: 5rem !important;
+        object-fit: contain !important;
+      }
+
+      @include for_media(bigTabletScreen) {
+        width: auto !important;
+        height: 5rem !important;
+        object-fit: contain !important;
+      }
+    }
+
+    @include for_media(mobileScreen) {
+      flex-direction: column;
+      justify-content: start;
+      padding-bottom: 2rem;
+    }
+
+    @include for_media(bigTabletScreen) {
+      flex-direction: column;
+      justify-content: start;
+      padding-bottom: 2rem;
+    }
+
+    // // > div[class="slick-slider slick-initialized"] {
+    // //   // >div[class="slick-arrow"]{
+    // //   //     .slick-prev::before {
+    // //   //         font-size: 20rem !important;
+    // //   //     }
+    // //   // }
+
+    // //   > button[class="slick-arrow slick-prev"] {
+    // //     font-size: 2rem !important;
+    // //     // color: #08150e;
+    // //     margin: 10rem 0rem 0rem 4rem!important;
+    // //     // @include for_media(mobileScreen) {
+    // //     //   font-size: 1.5rem !important;
+    // //     // }
+    // //   }
+    // //   > button[class="slick-arrow slick-next"] {
+    // //     font-size: 2rem !important;
+    // //     // color: #08150e;
+    // //     margin: 10rem 4rem 0rem 0rem!important;
+    // //     // @include for_media(mobileScreen) {
+    // //     //   font-size: 1.5rem !important;
+    // //     // }
+    // //   }
+    // }
+  }
+
+  .contents {
+    width: 100% !important;
+
+    @include for_media(mobileScreen) {
+      margin-top: 1rem !important;
+    }
+
+    @include for_media(bigTabletScreen) {
+      margin-top: 1rem !important;
+    }
+  }
+}
+
+// Replacing the Less variables with some example values
+.addSkillContainer {
+  >div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+
+    >div {
+      width: 100%;
+    }
+
+    >span {
+      background: #6a994e;
+      /* var(--light-zuccini) */
+      border-radius: 17px;
+      padding: 0.1em 0.6em;
+      color: #ffffff;
+      /* @white */
+      cursor: pointer;
+    }
+  }
+
+  div[class="ui divider"] {
+    margin: 0.1rem !important;
+    border-top: 1px solid #3b7a57 !important;
+    /* @zuccini */
+  }
+}
+
+.skillOptionsContainer {
+  >div {
+    >div {
+      margin: 0.5rem 0;
+
+      >span {
+        margin-left: 0.2rem;
+      }
+    }
+
+    >div:hover {
+      background: #b0b0b0;
+      /* @grayColor6 */
+      border-radius: 5px;
+    }
+
+    height: 7rem;
+    overflow: auto;
+  }
+
+  >button {
+    display: block !important;
+    margin: 1rem auto 0 !important;
+  }
+}
+
+.jdViewerForm {
+  .selectButton {
+    cursor: pointer;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+  }
+
+  h4,
+  h5 {
+    margin: 0 !important;
+  }
+
+  .errorFields {
+
+    h4,
+    h5 {
+      color: #ff5733 !important;
+      /* @error-red */
+    }
+  }
+
+  >button {
+    display: block !important;
+    margin: auto !important;
+  }
+
+  div[class="field"],
+  div[class="error field"] {
+    margin: 0 !important;
+  }
+
+  div[class="error field"]>div {
+    border: 1px solid #ff5733 !important;
+    /* @error-red */
+    border-radius: 0.28571429rem;
+  }
+
+  .numerousFields {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+
+    .sectionBar {
+      background-color: #ede5b2;
+      /* @tusk */
+      padding: 0.3rem 0.8rem;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+
+      >div:last-child {
+        display: flex;
+      }
+    }
+  }
+
+  .numerousFields:has(.tableContainer) {
+    justify-content: space-between;
+  }
+
+  .tableContainer {
+    max-height: 30vw;
+    width: 70%;
+    overflow-y: auto;
+    background-color: #ede5b2;
+    /* @tusk */
+    padding: 0.5em 1em;
+    border-radius: 12px;
+
+    >table {
+      background: #ede5b2;
+      /* @tusk */
+      border: none !important;
+      margin-top: 0.5rem !important;
+
+      .skillEditTable {
+        display: grid;
+        grid-template-columns: 50% 30% 20%;
+      }
+
+      .skillAccordion>div {
+        display: block !important;
+        width: 100%;
+
+        >div:first-child {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        >div:last-child {
+          background-color: #ffffff;
+          /* @white */
+          padding: 0.5rem !important;
+          border-radius: 0.5rem;
+
+          >div:nth-child(even) {
+            background-color: #eeeeee;
+          }
+
+          >div {
+            padding: 5px;
+            display: grid;
+            grid-template-columns: auto 100px 150px 20px;
+          }
+
+          .accordionContentHeader {
+            border-bottom: 1px solid #ede5b2;
+            /* @tusk */
+          }
+        }
+      }
+
+      tr {
+        &:nth-child(odd) {
+          background: #ebe6bd;
+        }
+
+        .sectionBar {
+          background: transparent;
+        }
+      }
+    }
+  }
+}
+
+.createAssessmentContainer {
+  padding: 2em;
+
+  .errorFile {
+    border: 2px dashed #ff5733 !important;
+    /* @error-red */
+
+    .errortext {
+      color: #ff5733;
+      /* @error-red */
+    }
+  }
+
+  >button {
+    display: block !important;
+    margin: 1em auto !important;
+  }
+}
+
+.processingContainer {
+  width: 85%;
+  margin: 3em auto;
+  box-shadow: 0px 0px 8px 0px #6a994e;
+  /* var(--light-zuccini) */
+  padding: 4%;
+
+  >button {
+    display: block;
+    margin-left: auto;
+  }
+
+  div[class="ui divider"] {
+    border-top: 3px solid #ede5b2 !important;
+    /* @tusk */
+  }
+
+  >div:first-child {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+
+    >span {
+      width: 7vw;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0 1vw;
+    }
+  }
+
+  >div:last-child {
+    display: flex;
+    justify-content: end;
+
+    >button {
+      background-color: #539165 !important;
+      color: #eeeeee !important;
+    }
+  }
+}
+
+.pdfContainer {
+  width: 100%;
+  max-width: 600px;
+  // margin: 0 auto;
+}
+
+object {
+  width: 100%;
+  min-height: 30vh;
+}
+
+@include for_media(mobileScreen) {
+  object {
+    min-height: 250px;
+  }
+
+  @include for_media(bigTabletScreen) {
+    object {
+      min-height: 250px;
+    }
+  }
+}
+
+.uploadContainer {
+  /* var(--light-zuccini) */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .uploadcontanerinside {
+    border: 2px dashed #6a994e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    padding: 1rem;
+
+    min-height: 25vh;
+    min-width: 25vw;
+
+    @include for_media(mobileScreen) {
+      min-height: 25vh;
+      min-width: 50vw;
+    }
+
+    @include for_media(bigTabletScreen) {
+      min-height: 25vh;
+      min-width: 50vw;
+    }
+
+    >button {
+      margin: 1em 0 !important;
+      background-color: #4e7c5b !important;
+      color: #fff !important;
+    }
+  }
+
+  .uploadcontanerinsideFull {
+    min-height: 45vh;
+    min-width: 35vw;
+
+    @include for_media(mobileScreen) {
+      min-height: 55vh;
+      min-width: 90vw;
+    }
+
+    @include for_media(bigTabletScreen) {
+      min-height: 50vh;
+      min-width: 35vw;
+    }
+  }
+}
+
+.nextbtn {
+  margin: 1rem 0rem !important;
+  background-color: #539165 !important;
+  color: #fff !important;
+  border-radius: 2.5rem !important;
+}
+
+.processingContainer {
+  width: 85%;
+  margin: 3em auto;
+  box-shadow: 0px 0px 8px 0px #6a994e;
+  /* var(--light-zuccini) */
+  padding: 4%;
+
+  >button {
+    display: block;
+    margin-left: auto;
+  }
+
+  div[class="ui divider"] {
+    border-top: 3px solid #ede5b2 !important;
+    /* @tusk */
+  }
+
+  >div:first-child {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+
+    >span {
+      width: 7vw;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0 1vw;
+    }
+  }
+}

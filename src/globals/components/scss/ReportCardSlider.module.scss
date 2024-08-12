@@ -1,0 +1,102 @@
+@import "assets/scss/main.scss";
+
+.humanizer {
+  width: 100%;
+  height: 100%;
+
+  @include for_media(mobileScreen) {
+    margin: 0;
+    width: 100%;
+    height: 50rem;
+  }
+
+  >div {
+    >div[class="slick-slider slick-initialized"] {
+      >button::before {
+        font-size: 1rem !important;
+        color: #08150e;
+
+        @include for_media(mobileScreen) {
+          font-size: 1.5rem !important;
+        }
+      }
+
+      >ul[class="slick-dots"] {
+        >li {
+          >button::before {
+            font-size: 1rem !important;
+            margin-top: 1.5rem;
+
+            @include for_media(mobileScreen) {
+              // font-size: 1rem !important;
+              font-size: 0.5rem !important;
+              margin-top: 0px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .boxContent {
+    margin-left: 10%;
+    width: 90%;
+
+    @include for_media(mobileScreen) {
+      padding: 0 !important
+    }
+  }
+}
+
+.boxContainer {
+  text-align: center;
+  padding: 1rem;
+
+  @include for_media(mobileScreen) {
+    padding-top: 3rem !important;
+  }
+
+  >div:first-child {
+    font-weight: 700;
+  }
+}
+
+.card {
+  margin-left: 20%;
+  border-radius: 20.14px;
+  width: 60%;
+  box-shadow: 3.36px 3.36px 6.71px 0px #4F7C5B;
+
+  @include for_media(mobileScreen) {
+    display: grid !important;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    gap: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+  }
+
+  @include for_media(mediumScreen) {
+    margin-left: 3.5rem;
+  }
+
+  @include for_media(bigTabletScreen) {
+    margin-left: 3.5rem;
+  }
+}
+
+
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 20.14px;
+
+  @include for_media(mobileScreen) {
+    margin-left: 5.5rem;
+    width: 13.5rem;
+    height: 18rem;
+    border-radius: 0px;
+  }
+}
