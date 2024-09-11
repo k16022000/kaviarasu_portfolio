@@ -11,14 +11,14 @@ function DesktopHeader(props) {
 
   const history = useHistory();
 
-  const handleServiceNavigation = (techSuite, section) => {
-    setHovered(false);
-    if (section) {
-      history.push(`/techsuite/${techSuite}?section=${section}`);
-    } else {
-      history.push(`/techsuite/${techSuite}`);
-    }
-  };
+  // const handleServiceNavigation = (techSuite, section) => {
+  //   setHovered(false);
+  //   if (section) {
+  //     history.push(`/techsuite/${techSuite}?section=${section}`);
+  //   } else {
+  //     history.push(`/techsuite/${techSuite}`);
+  //   }
+  // };
 
   const KaviTextSVG = useMemo(() => (
     <svg
@@ -46,12 +46,6 @@ function DesktopHeader(props) {
 
   return (
     <div className={styles.DesktopHeader}>
-      {/* <Image
-        src={Logo}
-        alt="logo"
-        className={styles.logo}
-        onClickCapture={() => handleTab("Home")}
-      /> */}
       <div>
         {KaviTextSVG}
         <div className={styles.menuItems}>

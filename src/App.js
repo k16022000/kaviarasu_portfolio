@@ -4,7 +4,7 @@ import { Switch, Route, useLocation } from "react-router-dom";
 import { lazy } from "react";
 import styles from "./App.module.scss";
 import useConstructor from "globals/utils/useConstructor";
-import { PrivateRoute, updateUserInfo } from "globals/utils/index";
+import { updateUserInfo } from "globals/utils/index";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "react-phone-input-2/lib/style.css";
@@ -14,8 +14,9 @@ import './assets/scss/common.scss';
 import NewFooter from "globals/components/NewFooter";
 
 const HomeScreen = lazy(() => import("./screens/home/HomeScreen"));
-const About =lazy(()=>import("./screens/AboutSection/About"));
+const About = lazy(() => import("./screens/AboutSection/About"));
 const Skills = lazy(() => import("./screens/Skills/Skills"));
+const WebcamComponent = lazy(() => import("./screens/WebcamComponent"));
 
 function App() {
   useConstructor(() => {
@@ -56,6 +57,7 @@ function App() {
           ref={ref}
         >
           <Switch>
+            <Route path="/webcam" component={WebcamComponent} />
             <Route path="/about" component={About} />
             <Route path="/skills" component={Skills} />
             <Route path="/" component={HomeScreen} />
