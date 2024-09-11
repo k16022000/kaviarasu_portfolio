@@ -6,7 +6,7 @@ import styles from "./ContactForDemo.module.scss";
 
 function ContactForDemo() {
   const handlePhoneClick = () => {
-    window.location.href = 'tel:+917094694226';
+    window.location.href = 'tel:+919360896961';
   };
 
   const handleWhatsappClick = () => {
@@ -14,7 +14,7 @@ function ContactForDemo() {
   };
 
   const handleMailClick = () => {
-    const email = "abhilasha.gaonkar@hrlytics.in,kayalvizhi@hrlytics.in";
+    const email = "beme17041@gmail.com";
     const subject = "Demo Request";
     const body = `
     Dear HRLytics Team,
