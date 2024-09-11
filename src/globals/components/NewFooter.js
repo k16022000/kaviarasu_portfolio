@@ -20,7 +20,7 @@ function Footer({ t }) {
 
   const openMap = () => {
     window.open(
-      "https://maps.app.goo.gl/tYhqBL5nDMMK19QdA",
+      "https://www.google.com/maps/place/Tiruchirappalli,+Tamil+Nadu/@10.8158337,78.6066253,12z/data=!3m1!4b1!4m6!3m5!1s0x3baaf50ff2aecdad:0x6de02c3bedbbaea6!8m2!3d10.7904833!4d78.7046725!16zL20vMDE5Zmx2?entry=ttu&g_ep=EgoyMDI0MDkwOC4wIKXMDSoASAFQAw%3D%3D",
       "_blank"
     );
   };
