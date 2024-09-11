@@ -16,21 +16,7 @@ function ContactForDemo() {
   const handleMailClick = () => {
     const email = "beme17041@gmail.com";
     const subject = "Demo Request";
-    const body = `
-    Dear HRLytics Team,
-    I am reaching out to express my interest in HRLytics.
-
-    Please find my details below:
-
-
-    1)Name:
-    2)Contact Number:
-    3)Organization:
-    4)Designation:
-    5)Query:
-
-    Best regards,
-    [Your Name]`;
+    const body = ``;
 
     const queryParams = {
       su: subject,
