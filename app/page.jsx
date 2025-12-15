@@ -73,7 +73,7 @@ export default function Portfolio() {
       ],
     },
     {
-      title: "Front-End Developer",
+      title: "Frontend Developer",
       company: "ViEntityData Pvt Ltd",
       location: "Bangalore",
       period: "October 2024 – July 2025",
@@ -85,7 +85,7 @@ export default function Portfolio() {
       ],
     },
     {
-      title: "Front-End Developer",
+      title: "Frontend Developer",
       company: "HRLytics",
       location: "Bengaluru",
       period: "December 2022 – September 2024",
@@ -194,7 +194,7 @@ export default function Portfolio() {
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
-                  className={`transition-colors duration-300 ${
+                  className={`cursor-pointer transition-colors duration-300 ${
                     activeSection === item.toLowerCase()
                       ? "text-cyan-400"
                       : "text-gray-300 hover:text-cyan-400"
@@ -318,7 +318,7 @@ export default function Portfolio() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 px-4">
+      {/* <section id="about" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
             About Me
@@ -337,6 +337,114 @@ export default function Portfolio() {
               management solutions that improve application performance by up to{" "}
               <span className="text-purple-400 font-semibold">35%</span>.
             </p>
+          </div>
+        </div>
+      </section> */}
+
+      {/* About Section */}
+      <section id="about" className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+            About Me
+          </h2>
+          <div className="bg-slate-800/50 backdrop-blur-md rounded-2xl p-8 md:p-12 border border-purple-500/20 shadow-2xl">
+            <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
+              <p>
+                With over{" "}
+                <span className="text-cyan-400 font-semibold">
+                  3+ years of professional experience
+                </span>{" "}
+                in frontend development, I specialize in building
+                high-performance, user-centric web and mobile applications. My
+                journey in software development has been driven by a passion for
+                creating seamless digital experiences that blend beautiful
+                design with robust functionality.
+              </p>
+
+              <p>
+                Throughout my career, I've had the privilege of working with
+                leading companies like{" "}
+                <span className="text-purple-400 font-semibold">
+                  Indian Educational Services (IES)
+                </span>
+                , where I currently lead frontend development for AdmitNation,
+                and{" "}
+                <span className="text-purple-400 font-semibold">
+                  ViEntityData
+                </span>
+                , where I architected cross-platform solutions. My expertise
+                spans the entire modern JavaScript ecosystem, with deep
+                proficiency in{" "}
+                <span className="text-cyan-400">
+                  React.js, Next.js, TypeScript, and React Native
+                </span>
+                .
+              </p>
+
+              <p>
+                I take pride in my ability to transform complex requirements
+                into elegant solutions. Some of my key achievements include:
+              </p>
+
+              <ul className="space-y-3 pl-6">
+                <li className="flex gap-3">
+                  <span className="text-cyan-400 font-bold">•</span>
+                  <span>
+                    Architected and built a complete CRM ecosystem from scratch,
+                    improving team productivity by{" "}
+                    <span className="text-cyan-400 font-semibold">80%</span>
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-cyan-400 font-bold">•</span>
+                  <span>
+                    Optimized application performance through advanced state
+                    management, reducing load times by{" "}
+                    <span className="text-cyan-400 font-semibold">30%</span>
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-cyan-400 font-bold">•</span>
+                  <span>
+                    Successfully migrated production infrastructure, cutting
+                    hosting costs by{" "}
+                    <span className="text-cyan-400 font-semibold">30%</span>{" "}
+                    while improving reliability
+                  </span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-cyan-400 font-bold">•</span>
+                  <span>
+                    Developed innovative features like real-time proctoring
+                    systems that increased user adoption by{" "}
+                    <span className="text-cyan-400 font-semibold">20%</span>
+                  </span>
+                </li>
+              </ul>
+
+              <p>
+                What sets me apart is my holistic approach to frontend
+                development. I don't just write code—I solve business problems,
+                optimize user experiences, and mentor teams. Whether it's
+                implementing{" "}
+                <span className="text-purple-400">
+                  SEO-optimized Next.js applications with SSR and ISR
+                </span>
+                , building{" "}
+                <span className="text-purple-400">
+                  reusable component libraries
+                </span>
+                , or integrating complex APIs, I bring both technical excellence
+                and strategic thinking to every project.
+              </p>
+
+              <p>
+                I'm constantly learning and staying ahead of industry trends,
+                embracing new technologies and best practices. My goal is to
+                continue pushing the boundaries of what's possible in web
+                development while delivering measurable business value.
+              </p>
+            </div>
           </div>
         </div>
       </section>
