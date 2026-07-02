@@ -927,8 +927,8 @@ export default function Portfolio() {
 
             <div className="border rounded-lg divide-y" style={{ borderColor: "var(--border)", background: "var(--surface)" }}>
               {SKILL_GROUPS.map((group, idx) => (
-                <Reveal key={group.key} delay={idx * 70}>
-                  <div className="px-5 py-4 sm:px-6 sm:py-5" style={{ borderColor: "var(--border)" }}>
+                <Reveal key={group.key} delay={idx * 70} className="border-b border-gray-200 last:border-b-0">
+                  <div key={group.key} className="px-5 py-4 sm:px-6 sm:py-5" style={{ borderColor: "var(--border)" }}>
                     <p className="f-mono text-[12.5px] mb-3" style={{ color: "var(--accent-2)" }}>{group.key}:</p>
                     <div className="flex flex-wrap gap-2">
                       {group.items.map((item) => (
